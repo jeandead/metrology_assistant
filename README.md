@@ -48,3 +48,6 @@ El agente hará un escaneo del Filetree local (`tree /F`), identificará automá
 
 ## 🛠️ Herramientas de Ingesta (markdown2json)
 El sistema requiere el ejecutable `markdown2json.exe` (incluido en `/bin`) para procesar la teoría desde tu Obsidian Vault personal. El agente lo utilizará automáticamente en las Fases 3 y 9 para asegurar que las fórmulas matemáticas LaTeX y la jerarquía de los apuntes no sufran corrupción, lo cual ocurriría si se usara el modelo RAG clásico.
+
+> **💡 Recomendación de Formato:** 
+> Cuando necesites pasarle manuales de equipos, guías de laboratorio o papers al agente de Antigravity (para que inicie el protocolo), se recomienda encarecidamente **convertirlos de antemano a formato Markdown (`.md`)**. Subir PDFs directamente puede corromper o perder las ecuaciones matemáticas y las tablas críticas, lo cual afectará la precisión de la Fase 3 (Trabajo Previo).

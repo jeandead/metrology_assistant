@@ -32,7 +32,7 @@ El plugin funciona de manera agnóstica a tus datos. **No trabajes dentro de la 
 
 Si ya ejecutaste algunas fases, tienes la guía y los datos medidos (CSV), y quieres que el agente trabaje en bucle profundo hasta tener el PDF compilado, utiliza el comando de meta-meta-orquestación `/goal`:
 
-> *"/goal @metrology-assistant Sigue trabajando en el informe hasta compilar el PDF final."*
+> *"/goal /metrology-assistant Sigue trabajando en el informe hasta compilar el PDF final."*
 
 El agente hará un escaneo del Filetree local (`tree /F`), identificará automáticamente qué secciones del `.tex` faltan por rellenar, y retomará la ejecución desde la fase exacta correspondiente (ya sea hacer los gráficos en Python, deducir la teoría de Blondel, o concluir los porcentajes de error).
 

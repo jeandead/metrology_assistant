@@ -1,0 +1,226 @@
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, mexico]{babel}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Protocolo Detallado de Laboratorio}\\
+    \large \textbf{Experiencia 4: Osciloscopio Digital Parte 1}
+\end{center}
+\vspace{0.5cm}
+
+\section{Preparativos Iniciales y Configuración del Entorno}
+
+Al llegar al banco de trabajo, el secretario del grupo debe iniciar la bitácora física anotando rigurosamente el título exacto de la experiencia, la fecha, hora de inicio, los nombres de los integrantes presentes (Jean Gatica, Sebastián Carroza) y las condiciones ambientales del laboratorio. 
+
+A continuación, se debe registrar la placa de características de cada equipo a utilizar. Es fundamental anotar la Marca, el Modelo, el Número de Serie y el Número de Inventario Institucional tanto del Osciloscopio Digital (típicamente de la serie \textbf{Rigol DS1000Z}, como el DS1054Z o DS1104Z) como del Generador de Funciones (Rigol DG1022), así como detallar los modelos de las sondas de medición pasivas.
+
+En el pendrive, se debe crear la siguiente estructura de directorios para evitar la mezcla accidental de capturas de pantalla y datos numéricos: \texttt{Exp4\_2.2\_Trigger}, \texttt{Exp4\_2.3\_Acoplamientos}, \texttt{Exp4\_2.4\_Ganancias}, y \texttt{Exp4\_2.5\_Transitorio}.
+
+\subsection{Compensación Manual de Sondas (Calibración Inicial)}
+Antes de iniciar cualquier medición, se debe comprobar el acoplamiento y compensación de las puntas pasivas. El procedimiento de compensación manual es el siguiente:
+\begin{enumerate}
+    \item Conecte la sonda al canal a verificar (ej. Canal 1, CH1). Ajuste el atenuador físico de la sonda en la posición \textbf{10X}.
+    \item Conecte el clip de tierra y la punta de gancho de la sonda al terminal de señal de compensación de la sonda (\textit{Probe Compensation Signal Output Terminal} y \textit{Ground Terminal}) ubicado en la esquina inferior derecha del panel frontal. Este terminal provee una onda cuadrada de referencia de \SI{3.0}{\volt} a \SI{1.0}{\kHz}.
+    \item \textbf{Configuración Manual:} Dado que la tecla \textit{AUTO} está estrictamente prohibida, configure el canal manualmente:
+    \begin{itemize}
+        \item Presione el botón \textbf{CH1} en el área de control vertical para abrir el menú del canal. Configure el menú de atenuación de sonda de pantalla a \textbf{10X} (softkey \textbf{Probe} $\rightarrow$ gire la perilla multifunción hasta \textbf{10X} y presione para confirmar).
+        \item Ajuste la escala vertical usando la perilla \textbf{VERTICAL SCALE} a \SI{1.0}{V/div}.
+        \item Ajuste la base de tiempo usando la perilla \textbf{HORIZONTAL SCALE} a \SI{500.0}{\micro\second/div} (para visualizar exactamente dos ciclos completos).
+        \item Gire la perilla de \textbf{TRIGGER LEVEL} para ajustar el nivel de disparo en aproximadamente \SI{1.5}{\volt}.
+    \end{itemize}
+    \item Compruebe la forma de onda en pantalla. Si la señal cuadrada muestra sobreimpulso o subimpulso (esquinas redondeadas o agudas), utilice un destornillador de ajuste no metálico en el condensador de compensación de la sonda hasta que la onda en pantalla sea perfectamente plana y rectangular.
+\end{enumerate}
+
+\textbf{Regla de Oro:} Queda estrictamente prohibido pulsar el botón físico \textbf{AUTO} en el panel de control durante toda la sesión de laboratorio. Todo ajuste de base de tiempo (perilla \textbf{HORIZONTAL SCALE}) y ganancia vertical (perilla \textbf{VERTICAL SCALE}) debe ser completamente manual y razonado.
+
+\section{Desarrollo de las Mediciones: Paso a Paso}
+
+\subsection{Parte 2.2: Análisis del Trigger y Nivel (Level)}
+
+\subsubsection*{Fundamento Teórico}
+El \textit{Trigger} (disparo) es el sistema encargado de sincronizar e iniciar el barrido horizontal en la pantalla del osciloscopio, permitiendo que señales periódicas rápidas aparezcan estables e inmóviles. Para que opere, se deben configurar condiciones estrictas en el menú de disparo:
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item \textbf{Type (Tipo de Disparo):} Define el criterio físico. Para propósitos generales se utiliza \textbf{Edge} (disparo por flanco).
+    \item \textbf{Fuente (Source):} Define de dónde proviene la señal de referencia. Puede ser una entrada analógica (\textbf{CH1-CH4}), un canal digital (\textbf{D0-D15}) o la red eléctrica de alimentación (\textbf{AC Line}, típicamente \SI{50}{Hz}).
+    \item \textbf{Pendiente (Slope):} Define si la condición de disparo ocurre cuando la señal cruza el nivel de voltaje de forma ascendente (flanco de subida $\uparrow$), descendente (flanco de bajada $\downarrow$) o en ambos flancos ($\uparrow\downarrow$).
+    \item \textbf{Nivel (Level):} Voltaje de umbral que la señal debe cruzar para iniciar el barrido horizontal. Se ajusta girando la perilla \textbf{TRIGGER LEVEL}.
+\end{itemize}
+Adicionalmente, existen varios modos de barrido (\textit{Sweep}): \textbf{Auto} (fuerza un barrido automático si la condición no ocurre en un tiempo límite), \textbf{Normal} (solo barre y actualiza la pantalla si se cumple estrictamente la condición de disparo, congelando la última traza si no se detecta) y \textbf{Single} (adquiere una sola traza al cumplirse el disparo y entra en modo \textbf{STOP}, ideal para transitorios).
+
+El objetivo de esta sección es comprender el comportamiento de la sincronización. Encienda el generador de señales y configure una onda sinusoidal de \SI{5.0}{V_{rms}} a \SI{50}{Hz}. Conecte la salida del generador al Canal 1 (CH1).
+
+\begin{enumerate}[label=\textbf{2.2.\alph*)}]
+    \item \textbf{Sincronización Base:} 
+    \begin{enumerate}[label=\roman*.]
+        \item Abra el menú de disparo presionando la tecla física \textbf{MENU} en el área de control de disparo (\textbf{TRIGGER}) en el panel frontal.
+        \item Presione la tecla de opción en pantalla (\textit{softkey}) al lado de \textbf{Type} y gire la perilla multifunción hasta seleccionar \textbf{Edge}. Presione la perilla para confirmar.
+        \item Presione el softkey \textbf{Source} y seleccione \textbf{CH1}.
+        \item Presione el softkey \textbf{Slope} y seleccione el icono de flanco de subida ($\uparrow$).
+        \item Gire la perilla física \textbf{TRIGGER LEVEL} para ajustar el nivel a \SI{0.00}{\volt} (o levemente superior \SI{0.00}{\volt}$^+$).
+        \item Ajuste manualmente el canal usando la perilla \textbf{VERTICAL SCALE} a \SI{2.0}{V/div} (o \SI{2.5}{V/div}) y la escala de tiempo con la perilla \textbf{HORIZONTAL SCALE} a \SI{5.0}{ms/div} para ver con claridad unos 2.5 ciclos completos de la señal.
+        \item Verifique que en la esquina superior izquierda de la pantalla el indicador de estado muestre \textbf{TD} (Triggered), lo que confirma un disparo exitoso, y en la esquina superior derecha se muestre la información de disparo activa (\texttt{Edge \quad CH1 \quad 0.00V}).
+        \item Guarde la captura utilizando el botón de guardado rápido físico \textbf{Help/Print} (el botón con un icono de impresora en el panel central) en su pendrive.
+    \end{enumerate}
+    
+    \item \textbf{Nivel Positivo Extremo:} Gire lentamente la perilla \textbf{TRIGGER LEVEL} en sentido horario, elevando el umbral de disparo. Observe cómo el punto de inicio de la traza se desplaza verticalmente hacia arriba a lo largo del flanco de subida. Al superar el valor pico máximo (aproximadamente \SI{7.07}{\volt}), note que la sincronía se pierde de inmediato. Documente cómo el indicador de estado superior de la pantalla cambia a \textbf{WAIT} (el osciloscopio está congelado esperando que la señal cruce el umbral inaccesible). Guarde la captura en su pendrive.
+    
+    \item \textbf{Nivel Negativo Extremo:} Gire la perilla \textbf{TRIGGER LEVEL} en sentido antihorario. Mientras el nivel esté dentro del rango dinámico de la onda sinusoidal (ej. entre \SI{0}{\volt} y \SI{-7.0}{\volt}), el osciloscopio se mantendrá en estado de disparo activo (\textbf{TD}). Si gira aún más allá del pico negativo (por debajo de \SI{-7.07}{\volt}), observe el cambio inmediato del estado a \textbf{WAIT}. Guarde la captura en su pendrive.
+    
+    \item \textbf{Cambio de Pendiente (Slope):} Retorne el nivel de disparo a \SI{0.00}{\volt}$^+$ (estado \textbf{TD}). Presione el softkey \textbf{Slope} en el menú de Trigger para cambiar a flanco de bajada ($\downarrow$). Observe y documente cómo el punto inicial de la traza en la cuadrícula de pantalla cambia de inmediato, mostrando a la onda descendiendo en lugar de ascendiendo a través del origen. Guarde la captura de pantalla con el menú del Trigger visible.
+    
+    \item \textbf{Señal Cuadrada y Fuentes de Trigger:} Conecte un segundo cable desde el generador de funciones (CH2) al Canal 2 (CH2) del osciloscopio e inyecte una señal cuadrada de \SI{5.0}{V_{rms}} a \SI{50}{Hz}. Presione la tecla física \textbf{CH2} en el área de control vertical para activar el canal en pantalla.
+    \begin{enumerate}[label=\roman*.]
+        \item En el menú de Trigger (tecla \textbf{MENU} de TRIGGER), presione el softkey \textbf{Source} y seleccione \textbf{CH1}. Observe que ambas ondas se ven perfectamente estables. Guarde la captura como \texttt{05\_2.2g\_sincro\_CH1.png}.
+        \item Cambie el softkey \textbf{Source} a \textbf{CH2}. La señal cuadrada sincroniza perfectamente y se mantiene inmóvil. Guarde la captura como \texttt{06\_2.2g\_sincro\_CH2.png}.
+        \item Cambie la fuente del disparo a \textbf{AC Line} (Red Eléctrica). Observe cómo ambas señales del generador comienzan a deslizarse horizontalmente de forma lenta por la grilla. Explique que esto se debe a la pequeña fluctuación e inestabilidad de la frecuencia de la red de CA de \SI{50}{Hz} comparada con el oscilador de cristal de alta precisión del generador de funciones. Guarde la captura como \texttt{07\_2.2g\_sincro\_RED.png}.
+    \end{enumerate}
+    
+    \item \textbf{Múltiplos y Frecuencias Aleatorias:} Devuelva la fuente de Trigger a \textbf{CH1}. Modifique la frecuencia de la señal cuadrada (CH2) en el generador de funciones manteniendo CH1 estable a \SI{50}{Hz}. Documente visualmente lo siguiente:
+    \begin{itemize}
+        \item \textbf{Frecuencia Múltiplo (\SI{100}{Hz}):} Ambas señales se mantienen estables debido a la relación armónica exacta. Guarde la captura.
+        \item \textbf{Frecuencia Submúltiplo (\SI{25}{Hz}):} Analice y explique el efecto de "doble traza" o parpadeo que ocurre en el CH2. Guarde la captura.
+        \item \textbf{Frecuencia Aleatoria (\SI{69}{Hz}):} Observe cómo el CH1 se mantiene perfectamente inmóvil (dado que el trigger está anclado a él), mientras que el CH2 se desplaza caóticamente y es completamente inestable. Guarde la captura de pantalla.
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Parte 2.3: Acoplamientos y Modos Invertidos}
+
+\subsubsection*{Fundamento Teórico}
+Antes de llegar a la etapa de amplificación y conversión analógico-digital, la señal atraviesa un circuito de acoplamiento de entrada configurable:
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item \textbf{Modo DC (Corriente Continua):} Conecta la entrada directamente al atenuador, permitiendo el paso íntegro de la señal (tanto su componente alterna como su nivel de continua u offset).
+    \item \textbf{Modo AC (Corriente Alterna):} Inserta un condensador en serie que bloquea por completo la componente continua (DC), dejando pasar únicamente la alterna. Atenúa fuertemente señales por debajo de los \SI{5}{Hz}.
+    \item \textbf{Modo GND (Tierra):} Desconecta la señal de entrada y conecta internamente el amplificador a tierra física. Muestra una línea plana correspondiente a \SI{0}{\volt}. **Advertencia:** Dado que el Trigger toma la señal después del circuito de acoplamiento, si se pone en GND el canal que actúa como fuente de disparo, el osciloscopio perderá instantáneamente la sincronización.
+\end{itemize}
+
+Para esta sección, desconecte su generador de funciones. Las señales serán provistas de forma pasiva a través de la mesa central a sus respectivos bancos de trabajo. Habrá una Señal 1 conectada al Canal 1 (CH1) y una Señal 2 conectada al Canal 2 (CH2) que posee un offset de continua aleatorio.
+
+\begin{enumerate}[label=\textbf{2.3.\alph*)}]
+    \item \textbf{Acoplamiento CC y Configuración del HUD:}
+    \begin{enumerate}[label=\roman*.]
+        \item Presione el botón físico \textbf{CH1} en la sección \textbf{VERTICAL} del panel frontal para abrir su menú. Presione el softkey en pantalla \textbf{Coupling} continuamente hasta seleccionar \textbf{DC}. Repita el mismo procedimiento presionando el botón físico \textbf{CH2} y seleccionando acoplamiento \textbf{DC}.
+        \item Configure las perillas de \textbf{VERTICAL SCALE} de ambos canales (ej. \SI{2.0}{V/div} o \SI{5.0}{V/div}) y la base de tiempo \textbf{HORIZONTAL SCALE} (ej. \SI{5.0}{ms/div}) para ver ambas señales con estabilidad e inmovilidad (Trigger en CH1 en flanco de subida, estado \textbf{TD}).
+        \item \textbf{Activación del HUD de Medidas Automáticas:}
+        \begin{itemize}
+            \item Presione el botón físico \textbf{Measure} en la sección de menús del panel frontal.
+            \item Presione la tecla física de menú en la pantalla (\textbf{MENU} en el bisel izquierdo) para abrir el menú de 37 parámetros de medición automática en el panel lateral.
+            \item Asegúrese de seleccionar como fuente al CH1 (softkey \textbf{Source} $\rightarrow$ gire la perilla multifunción hasta \textbf{CH1} y presione).
+            \item Presione el softkey \textbf{Voltage} para desplegar los parámetros de tensión. Presione el softkey correspondiente a \textbf{Vpp} (voltaje pico a pico), luego **Vavg** (valor medio en todo el ciclo) y finalmente **Per.Vrms** (voltaje eficaz en el periodo). Los tres parámetros aparecerán listados en el HUD inferior de la pantalla.
+            \item Cambie el softkey **Source** a \textbf{CH2} en el menú de pantalla. Presione nuevamente **Vpp**, **Vavg** y **Per.Vrms** para agregar los parámetros automáticos del Canal 2 en el HUD.
+        \end{itemize}
+        \item Guarde una captura PNG de la pantalla con el HUD de medidas activo usando el botón físico \textbf{Help/Print}.
+    \end{enumerate}
+    
+    \item \textbf{Desfase con Cursores Manuales (Acople CC):} El cálculo de desfase temporal entre dos ondas no debe limitarse únicamente al HUD automático. Debe medirse directamente en la cuadrícula de pantalla utilizando cursores físicos de la siguiente forma:
+    \begin{enumerate}[label=\roman*.]
+        \item Presione el botón físico \textbf{Cursor} en el panel frontal para entrar al menú de cursores.
+        \item Presione el softkey \textbf{Mode} $\rightarrow$ gire la perilla multifunción hasta seleccionar \textbf{Manual} y presione para confirmar.
+        \item Presione el softkey \textbf{Select} para elegir el tipo de cursor de tiempo (representado por dos líneas verticales paralelas sólidas y punteadas).
+        \item Presione el softkey \textbf{Source} y seleccione \textbf{CH1} (o el canal con la señal de referencia).
+        \item \textbf{Ajuste del Cursor A:} Presione el softkey \textbf{CursorA} (o presione la perilla multifunción continuamente hasta seleccionar Cursor A) y gire la perilla multifunción hasta alinear la línea vertical sólida del Cursor A exactamente en el punto de cruce por cero (pendiente positiva) de la Señal 2 (CH2).
+        \item \textbf{Ajuste del Cursor B:} Presione el softkey \textbf{CursorB} y gire la perilla multifunción hasta alinear la línea vertical punteada del Cursor B en el cruce por cero homólogo (pendiente positiva) de la Señal 1 (CH1).
+        \item \textbf{Lectura de Datos:} Anote el valor de la diferencia temporal en su bitácora. En el panel de resultados de cursores en la esquina superior izquierda se indicará la diferencia temporal como \textbf{BX-AX} (o \textbf{|dX|}) y su recíproco \textbf{1/|dX|}. Este $\Delta X$ es fundamental para el informe.
+        \item Guarde una captura PNG usando \textbf{Help/Print} asegurándose de que las posiciones de los cursores y el panel de resultados en la grilla sean claramente visibles.
+    \end{enumerate}
+    
+    \item \textbf{Acoplamiento CA:} Presione el botón físico \textbf{CH1} y cambie el softkey \textbf{Coupling} a \textbf{AC}. Repita el proceso para el \textbf{CH2}. Observe y anote cómo ambas ondas sinusoidales cambian de posición vertical, centrándose exactamente sobre la línea de referencia de \SI{0}{\volt} (ya que el condensador en serie bloquea la componente DC y elimina el offset aleatorio de la Señal 2).
+    Utilice nuevamente el menú de \textbf{Cursor} para repetir meticulosamente la medición del desfase temporal ($\Delta X$) entre los cruces por cero. Compare este valor con el obtenido en acoplamiento CC. Guarde la captura PNG.
+    
+    \item \textbf{Acoplamiento Tierra (GND):} Presione el botón físico \textbf{CH1} y cambie el softkey \textbf{Coupling} a \textbf{GND}. Repita para \textbf{CH2}. Observe que ambas trazas se convierten en líneas perfectamente planas. Gire la perilla de \textbf{VERTICAL POSITION} de cada canal para verificar que el cero de referencia coincida con los punteros de nivel lateral en la grilla. Tome una captura PNG.
+    
+    \item \textbf{Inversión Doble (CC):} Restablezca el acoplamiento a \textbf{DC} en ambos canales. Presione \textbf{CH1} y presione el softkey \textbf{Invert} para cambiarlo a \textbf{ON}. Repita el proceso presionando \textbf{CH2} y cambiando \textbf{Invert} a \textbf{ON}. Observe en la pantalla cómo ambas señales se reflejan verticalmente respecto a su referencia de tierra. Documente que las amplitudes medidas en el HUD se mantienen idénticas, pero los valores medios (\textbf{Vavg}) han cambiado de signo en ambos canales. Guarde la captura PNG.
+    
+    \item \textbf{Inversión Simple y Medida Fasorial (CC):} Presione el botón físico \textbf{CH2} y cambie el softkey \textbf{Invert} a \textbf{OFF}, dejando \textbf{únicamente el CH1 invertido}. Utilice el menú de cursores manuales para alinear el Cursor A y el Cursor B nuevamente en los cruces por cero con pendiente positiva. Anote el nuevo desfase temporal ($\Delta X$) indicado en el panel lateral superior. Esta captura de pantalla es un requisito fundamental para calcular correctamente los desfases en el diagrama fasorial en su informe. Guarde la captura PNG.
+\end{enumerate}
+
+\subsection{Parte 2.4: Ganancias, Base de Tiempo y Figuras de Lissajous}
+
+Retome el control del banco de trabajo conectando el generador de funciones Rigol DG1022. Configure una señal sinusoidal en ambos canales del generador con amplitud y frecuencia variables. El osciloscopio se encontrará inicialmente en el modo de barrido estándar de tiempo (Y-t).
+
+\begin{itemize}
+    \item \textbf{Ajuste Óptimo (2 Ciclos):} Gire las perillas físicas de \textbf{VERTICAL SCALE} de cada canal activo (CH1 y CH2) y la perilla física de \textbf{HORIZONTAL SCALE} (escala de tiempo horizontal) hasta que se visualicen exactamente dos (o dos y medio) ciclos completos en la grilla de la pantalla. Use las perillas físicas de \textbf{VERTICAL POSITION} de cada canal y la perilla de \textbf{HORIZONTAL POSITION} para centrar vertical y horizontalmente ambas trazas. Registre en su bitácora los valores de amplitud ($V_{pp}$) y frecuencia ($f$) mostrados en el HUD automático e inferior y tome una captura PNG.
+    
+    \item \textbf{Atenuación Mínima (Pérdida de Resolución):} Gire la perilla de \textbf{VERTICAL SCALE} de ambos canales en sentido antihorario para aumentar el V/div progresivamente (disminuyendo la ganancia y sensibilidad vertical de la etapa de entrada) hasta que ambas ondas colapsen en líneas horizontales prácticamente planas y delgadas. Guarde un PNG para documentar en el informe la degradación extrema de la resolución y precisión en la amplitud de la señal.
+    
+    \item \textbf{Saturación (Clipping Vertical):} Gire la perilla de \textbf{VERTICAL SCALE} en sentido horario (disminuyendo el V/div al mínimo, ej. \SI{1.0}{mV/div}), aumentando la sensibilidad vertical al máximo. Observe cómo la señal sobrepasa los límites superior e inferior de la pantalla, recortándose bruscamente (saturación de los convertidores analógico-digitales). 
+    Analice y documente que mientras los parámetros temporales (período y frecuencia) aún se pueden estimar razonablemente (debido a que los cruces por cero permanecen intactos en la traza), todos los parámetros de voltaje (Vpp, Vavg, Vmax, Vrms) quedan severamente distorsionados e invalidados. Guarde la captura PNG.
+    
+    \item \textbf{Modo X-Y (Lissajous Base):} Cambie la visualización de barrido del osciloscopio del modo temporal Y-t al modo de composición X-Y (voltaje contra voltaje).
+    \begin{enumerate}[label=\roman*.]
+        \item Presione el botón físico \textbf{MENU} en el área de control de tiempo (\textbf{HORIZONTAL}) del panel frontal.
+        \item Presione el softkey \textbf{Time Base} (por defecto configurado en \textbf{YT}).
+        \item Gire la perilla multifunción hasta seleccionar el modo \textbf{XY} y presione la perilla para confirmar el cambio.
+        \item Observe que el Canal 1 (CH1) se mapea automáticamente al eje horizontal (eje X, abscisas) y el Canal 2 (CH2) al eje vertical (eje Y, ordenadas). (El osciloscopio apaga automáticamente los canales CH3 y CH4 si estaban habilitados).
+        \item \textbf{Cursores en Modo XY:} Presione el botón físico \textbf{Cursor} en el panel frontal. Presione el softkey \textbf{Mode} y gire la perilla multifunción hasta seleccionar \textbf{XY} y presione.
+        \item Utilice los cursores en pantalla para medir meticulosamente el voltaje máximo en el eje de las abscisas ($V_{X,max}$, ancho de la elipse) y en el eje de las ordenadas ($V_{Y,max}$, altura de la elipse). Anote los valores en su bitácora y guarde la captura PNG.
+    \end{enumerate}
+    
+    \item \textbf{Lissajous Dinámico (Rotación de Elipse):} En el generador de funciones, acceda al menú de fase de pantalla presionando el botón físico \textbf{Align Phase} o \textbf{Phase} en el DG1022. Introduzca de manera manual un desfase gradual que se desplace desde $0^\circ$ hasta $180^\circ$. Observe en tiempo real la rotación y deformación del patrón visualizado (pasando de línea recta en $0^\circ$ a elipse, círculo en $90^\circ$ y línea invertida en $180^\circ$). Se aconseja registrar este comportamiento dinámico mediante un video corto con el teléfono móvil para respaldar la bitácora de grupo.
+    
+    \item \textbf{Relaciones de Frecuencia Armónicas:} Establezca la frecuencia de CH2 (canal Y) del generador de funciones en exactamente \SI{50}{Hz}. Modifique secuencialmente la frecuencia del CH1 (canal X) en el generador de funciones a las siguientes relaciones armónicas estables y capture una captura PNG de cada figura formada:
+    \begin{itemize}
+        \item \textbf{Relación 2:1 ($f_1 = \SI{100}{Hz}$):} Se observará una figura de Lissajous con forma de "ocho" o signo de infinito.
+        \item \textbf{Relación 3:2 ($f_1 = \SI{75}{Hz}$):} Se observará una figura con tres lóbulos horizontales y dos verticales.
+        \item \textbf{Relación 1:2 ($f_1 = \SI{25}{Hz}$):} Se observará una figura de Lissajous vertical con dos lóbulos verticales y uno horizontal.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Parte 2.5: Medición de Señal Transitoria}
+
+\subsubsection*{Fundamento Teórico (Respuesta en Frecuencia y Tiempo de Subida)}
+Los instrumentos reales se comportan como filtros pasa-bajos, caracterizados por su Ancho de Banda ($BW$) y su tiempo de subida de transición rápida ($T_s$), definido como el tiempo que tarda la señal en pasar del 10\% al 90\% de su valor de régimen final. Estas dos variables de diseño se relacionan analíticamente mediante la ecuación: $BW = \frac{0.35}{T_s}$. 
+Al conectar sistemas en cascada de medición (por ejemplo, el circuito bajo prueba, la sonda pasiva de atenuación y el osciloscopio digital), el tiempo de subida equivalente y total del sistema de medición se degrada, estimándose mediante el método de la raíz de la suma de cuadrados: $T_{sT} \approx \sqrt{\sum (T_{si})^2}$. Para realizar mediciones fidedignas de transitorios veloces sin distorsión por ancho de banda, es imperativo que el tiempo de subida combinado del osciloscopio y la sonda ($T_{s,\text{inst}}$) sea significativamente menor (al menos un factor de 5) que el tiempo de subida propio del transitorio a medir.
+
+Esta sección es altamente crítica y propensa a fallas debido a la naturaleza aperiódica (un solo evento rápido) de la señal. El profesor inyectará un pulso transitorio no periódico desde el panel de control central. Dicha señal consta de un flanco de subida sumamente abrupto ($\approx \SI{2.0}{\micro\second}$) seguido de una cola de decaimiento sumamente lenta ($\approx \SI{400.0}{\micro\second}$). Un intento convencional de captura utilizando el modo de visualización continuo ("RUN") fallará inexorablemente. Se requiere el uso riguroso de capturas asimétricas y del modo de disparo único.
+
+\subsubsection*{Procedimiento de Almacenamiento en Pendrive (External Storage)}
+Antes de iniciar los disparos, asegúrese de que el pendrive (formateado obligatoriamente en FAT32) se encuentre conectado en el puerto **USB Host Interface** ubicado en la esquina inferior izquierda del panel frontal. Verifique que aparezca un mensaje flotante en pantalla indicando que la unidad ha sido montada de forma exitosa bajo la designación de **Disk D** (Disco Externo).
+\begin{itemize}
+    \item \textbf{Guardado Rápido de Capturas de Pantalla (PNG):} En cualquier instante, al presionar la tecla física con el icono de una impresora (\textbf{Help/Print}) en el panel central, el osciloscopio guardará instantáneamente un pantallazo a color en formato \texttt{.png} en la raíz de su unidad USB, con un nombre correlativo autogenerado.
+    \item \textbf{Guardado de Datos Numéricos (CSV):} Para exportar las curvas matemáticas para procesamiento en MATLAB/Python:
+    \begin{enumerate}[label=\roman*.]
+        \item Presione la tecla física \textbf{Storage} en la sección de menús de control.
+        \item Presione el softkey \textbf{Storage} y seleccione la opción **CSV** mediante la perilla multifunción.
+        \item Presione el softkey **DataSrc** para elegir entre **Screen** (guarda los puntos visualizados en pantalla) o **Memory** (guarda la totalidad de la memoria profunda de adquisición del canal). Se recomienda seleccionar \textbf{Screen} para evitar archivos excesivamente grandes y lentos de procesar, salvo que se le indique lo contrario.
+        \item Presione el softkey **Save**. Esto desplegará la pantalla de Disk Manage.
+        \item Utilice la perilla multifunción para abrir el directorio **Disk D** y navegar hasta la carpeta de destino correspondiente (ej. \texttt{Exp4\_2.5\_Transitorio}).
+        \item Presione el softkey **New File** (o **Save**), configure un nombre descriptivo (ej. \texttt{transitorio\_completo}) y presione confirmar para escribir el archivo \texttt{.csv}.
+    \end{enumerate}
+\end{itemize}
+
+\subsubsection*{Ejecución Paso a Paso}
+\begin{enumerate}
+    \item \textbf{Transitorio Completo:} 
+    \begin{enumerate}[label=\roman*.]
+        \item Configure manualmente la escala de tiempo horizontal usando la perilla \textbf{HORIZONTAL SCALE} a \SI{50.0}{\micro\second/div} para obtener una ventana total de adquisición de \SI{500.0}{\micro\second}.
+        \item Ajuste la escala de voltaje del CH1 a \SI{100.0}{V/div} (o la escala adecuada provista por el profesor) y sitúe el acoplamiento en \textbf{DC}.
+        \item Abra el menú de Trigger presionando \textbf{MENU} en la sección de TRIGGER. Configure: \textbf{Type} $\rightarrow$ **Edge**, \textbf{Source} $\rightarrow$ **CH1**, \textbf{Slope} $\rightarrow$ flanco de subida ($\uparrow$).
+        \item Gire la perilla de **TRIGGER LEVEL** para ajustar el voltaje de disparo muy por encima del nivel de ruido eléctrico (ej. en aproximadamente \SI{+30.0}{\volt}).
+        \item \textbf{Armado de Adquisición Única:} Presione la tecla física \textbf{SINGLE} en la parte superior derecha del panel frontal. Note que la tecla física **SINGLE** se ilumina en amarillo, el botón **RUN/STOP** se apaga por completo, y el indicador superior izquierdo de la pantalla cambia al estado **WAIT** (el osciloscopio está en espera ininterrumpida y en alerta para registrar el evento).
+        \item Al ser emitido el pulso desde la mesa central, el osciloscopio disparará de inmediato al cruzar el umbral, completará el registro de datos y cambiará de forma automática al estado **STOP** (la luz del botón **SINGLE** se apagará y el botón **RUN/STOP** se iluminará en rojo fijo).
+        \item Guarde de inmediato el archivo de datos numéricos en formato \textbf{.csv} utilizando el menú de **Storage** y exporte la imagen de pantalla \textbf{.png} mediante el botón rápido \textbf{Help/Print}.
+    \end{enumerate}
+    
+    \item \textbf{Zoom al Flanco de Subida:} Manteniendo las configuraciones de Trigger idénticas, reduzca masivamente la base de tiempo girando la perilla \textbf{HORIZONTAL SCALE} en sentido horario hasta alcanzar una escala de \SI{200.0}{ns/div} (para hacer zoom detallado al instante del disparo). Presione la tecla física \textbf{SINGLE} para volver a armar la adquisición (estado \textbf{WAIT}). Tras el disparo del siguiente pulso, la pantalla mostrará con total nitidez el trayecto vertical y de subida de la señal. Mida el tiempo de subida en la cuadrícula y guarde los archivos CSV y PNG.
+    
+    \item \textbf{Zoom al Flanco de Bajada (Procedimiento de Retardo Horizontal Crítico):} El decaimiento del transitorio se extiende por casi \SI{400.0}{\micro\second}, por lo que no es visible bajo bases de tiempo rápidas. 
+    \begin{enumerate}[label=\roman*.]
+        \item Regrese la base de tiempo principal a la escala de \SI{50.0}{\micro\second/div} usando la perilla \textbf{HORIZONTAL SCALE}.
+        \item \textbf{Ajuste del Delay Horizontal:} **Obligatoriamente**, gire la perilla física de \textbf{HORIZONTAL POSITION} (rotulada como \textbf{Position} o \textbf{Delay} en el área HORIZONTAL) en sentido antihorario. Observe cómo el marcador visual naranja del origen de tiempo (representado por una pequeña letra "T" anaranjada en la parte superior de la grilla) se desplaza hacia el extremo **IZQUIERDO** de la cuadrícula de pantalla (sitúelo idealmente sobre la primera división vertical de la izquierda). Esto desplaza el retardo horizontal, habilitando que la grilla disponga de casi \SI{450.0}{\micro\second} de ventana de tiempo a la derecha del disparo para capturar la totalidad de la lenta rampa de decaimiento del transitorio.
+        \item Configure las propiedades de disparo para flanco negativo: abra el menú de Trigger (\textbf{MENU}), presione el softkey \textbf{Slope} $\rightarrow$ seleccione flanco de bajada ($\downarrow$).
+        \item Gire la perilla de **TRIGGER LEVEL** para situar el umbral de disparo muy cerca del pico de voltaje máximo del transitorio (ej. \SI{310.0}{\volt}).
+        \item Presione la tecla física \textbf{SINGLE} para armar la captura (estado \textbf{WAIT}). Tras ocurrir el disparo, note cómo la cola del transitorio decae de forma completa dentro de la grilla de la pantalla. Guarde el archivo CSV y la captura PNG.
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}

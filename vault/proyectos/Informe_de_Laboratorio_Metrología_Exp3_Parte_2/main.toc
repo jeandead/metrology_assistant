@@ -1,0 +1,29 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Resumen Ejecutivo}{2}{section.1}%
+\contentsline {section}{\numberline {2}Introducción}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Objetivos}{3}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Marco Teórico}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Principio de funcionamiento de Amperímetro}{3}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Cálculo de Resistencias Shunt}{3}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Fijación de Resistencia de Calibración}{4}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Protecciones del Instrumento}{5}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Circuito de Contrastación del Amperímetro}{5}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.5}Circuito de Validación del Amperímetro}{5}{subsubsection.3.1.5}%
+\contentsline {subsubsection}{\numberline {3.1.6}Puente de Kelvin}{5}{subsubsection.3.1.6}%
+\contentsline {section}{\numberline {4}Trabajo Previo}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Diseño del Amperímetro de tres rangos}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Simulación}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Construcción de Resistencias Shunt con Nicrom}{8}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Diseño del Circuito de Contrastación}{10}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Diseño del Circuito de Carga en Paralelo}{11}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Desarrollo de la Experiencia}{13}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Armado y Calibración del Amperímetro}{13}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Medición en Circuito de Carga en Paralelo}{14}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Resultados}{14}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Calibración y Error de Rango}{14}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Verificación de Linealidad}{15}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Análisis Gráfico de Linealidad}{16}{subsubsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.3}Prueba en Circuito de Carga Paralelo}{17}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Análisis de Error y Efecto de Carga}{17}{subsubsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.4}Error escala lineal}{19}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Conclusiones}{22}{section.7}%

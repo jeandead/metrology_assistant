@@ -1,0 +1,47 @@
+% Contenido para: sections/3marco_teorico.tex
+
+El osciloscopio es un instrumento fundamental en la ingeniería eléctrica, diseñado para la visualización electrónica y representación gráfica de señales eléctricas que varían en el tiempo. Permite analizar parámetros clave como amplitud, frecuencia y desfase, siendo crucial para el diagnóstico y análisis de circuitos. Aunque existen versiones analógicas y digitales, ambas comparten principios operativos básicos.
+
+\subsection{Principio de Funcionamiento}
+
+\subsubsection{Osciloscopio Analógico}
+El osciloscopio analógico opera mediante un Tubo de Rayos Catódicos (TRC). En este tubo, un cañón electrónico genera un haz de electrones que impacta una pantalla fluorescente, creando un punto luminoso. Este haz es desviado por placas de deflexión electrostática: un par vertical y un par horizontal. La tensión aplicada a las placas verticales controla la posición vertical del punto (eje Y), mientras que la tensión en las placas horizontales controla la posición horizontal (eje X).
+
+\subsubsection{Osciloscopio Digital}
+Los osciloscopios digitales funcionan de manera diferente. En lugar de un TRC, adquieren la señal de entrada mediante un conversor Analógico-Digital (A/D), que muestrea la señal a intervalos regulares. Estas muestras digitales se almacenan en una memoria (RAM) y luego un microprocesador las procesa para reconstruir y mostrar la forma de onda en una pantalla (generalmente LCD o LED). Este proceso permite almacenar, analizar y manipular las señales con mayor flexibilidad que un osciloscopio analógico.
+
+\subsection{Modos de Operación del Osciloscopio}
+
+\begin{itemize}
+    \item \textbf{Modo Y-t (Tiempo):} Es el modo más común. El eje vertical (Y) representa la amplitud de la señal de entrada (tensión) y el eje horizontal (X) representa el tiempo. Para lograr esto, se aplica una señal "diente de sierra" a las placas de deflexión horizontal, generando un barrido a velocidad constante de izquierda a derecha. Esto permite visualizar cómo varía la señal en función del tiempo.
+    \item \textbf{Modo X-Y:} En este modo, el eje horizontal (X) representa la tensión de un canal (ej. CH2) y el eje vertical (Y) representa la tensión de otro canal (ej. CH1). El tiempo se vuelve una variable implícita. Este modo es útil para comparar dos señales, especialmente para visualizar Figuras de Lissajous y determinar relaciones de fase y frecuencia entre ellas.
+\end{itemize}
+
+\subsection{Sistema Vertical (Ganancia y Posición)}
+Cada canal de entrada (CH1, CH2, etc.) posee controles para ajustar la ganancia vertical o sensibilidad, expresada en Volts por división (V/div). Este control actúa como un amplificador o atenuador que escala la señal de entrada para que se ajuste adecuadamente a la pantalla. Una ganancia muy alta puede saturar la señal (cortar los picos), mientras que una muy baja puede hacerla indistinguible. Adicionalmente, el control de posición vertical permite desplazar la traza hacia arriba o abajo en la pantalla sin cambiar su amplitud.
+
+\subsection{Sistema Horizontal (Base de Tiempo y Posición)}
+El control de la base de tiempo ajusta la velocidad del barrido horizontal, expresada en segundos por división (s/div). Modifica la pendiente de la señal diente de sierra aplicada a las placas horizontales (en analógicos) o la escala temporal de los datos adquiridos (en digitales). Permite acercar o alejar la visualización en el eje del tiempo para observar más o menos ciclos de la señal. El control de posición horizontal permite desplazar la traza hacia la izquierda o derecha.
+
+\subsection{Sistema de Disparo (Trigger)}
+El sistema de Trigger (disparo) es crucial para obtener una visualización estable de señales periódicas. Determina el instante exacto en que el barrido horizontal debe comenzar. Sin una sincronización adecuada, cada barrido comenzaría en un punto diferente de la señal, haciendo que la imagen parezca moverse o superponerse caóticamente. Las condiciones principales del trigger son:
+\begin{itemize}
+    \item \textbf{Fuente (Source):} Selecciona la señal que se usará como referencia para el disparo (ej. CH1, CH2, Línea/Red, Externa).
+    \item \textbf{Nivel (Level):} Define el umbral de tensión que la señal fuente debe cruzar para activar el disparo.
+    \item \textbf{Pendiente (Slope):} Especifica si el disparo debe ocurrir cuando la señal cruza el nivel con pendiente positiva (subida) o negativa (bajada).
+\end{itemize}
+Existen modos de disparo como Normal (barrido solo si hay trigger), Auto (barrido forzado si no hay trigger) y Single (un solo barrido al detectar trigger, útil para transitorios). Los osciloscopios digitales también suelen ofrecer zonas de Pre-Trigger y Post-Trigger, permitiendo ver la señal antes y después del evento de disparo.
+
+\subsection{Acoplamiento de Entrada (Coupling)}
+El modo de acoplamiento define cómo se conecta eléctricamente la señal de entrada al sistema vertical del osciloscopio. Los modos principales son:
+\begin{itemize}
+    \item \textbf{CC (DC - Corriente Continua):} Permite el paso de todas las componentes de la señal, tanto la componente alterna (CA) como la componente continua (CC o valor medio). Es útil para ver la señal completa, incluyendo su nivel de offset.
+    \item \textbf{CA (AC - Corriente Alterna):} Bloquea la componente continua de la señal mediante un condensador en serie, dejando pasar únicamente la componente alterna. Es útil para visualizar pequeñas variaciones alternas superpuestas a un nivel de CC grande. Frecuencias muy bajas (ej. < 5 Hz) pueden ser atenuadas.
+    \item \textbf{GND (Tierra):} Desconecta la señal de entrada y conecta la entrada del amplificador a la referencia de tierra del osciloscopio. Muestra una línea horizontal en 0V, útil para verificar la posición de referencia o eliminar ruido temporalmente.
+\end{itemize}
+
+\subsection{Puntas de Osciloscopio (Sondas)}
+Las señales no se conectan directamente, sino a través de puntas de prueba o sondas. Estas no solo proveen una conexión física segura, sino que también suelen incluir atenuación (ej. 1x, 10x, 100x) para escalar señales de alta tensión a niveles manejables por el osciloscopio. Además, están diseñadas para minimizar la carga sobre el circuito bajo prueba y mantener la integridad de la señal en un ancho de banda específico. Existen puntas de tensión (pasivas, activas, diferenciales) y puntas de corriente.
+
+\subsection{Medición de Señales Transitorias}
+Las señales transitorias son eventos de corta duración que no se repiten periódicamente. Capturarlas requiere configurar adecuadamente el osciloscopio, especialmente el modo de trigger Single. La capacidad de los osciloscopios digitales para almacenar datos antes del disparo (Pre-Trigger) es particularmente útil para analizar las causas o el contexto inmediato de un evento transitorio.

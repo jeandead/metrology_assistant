@@ -1,0 +1,237 @@
+{
+  "main": {
+    "id": "d70dc795629c9f48",
+    "type": "split",
+    "children": [
+      {
+        "id": "ccc462a94b791bca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a9f5f5a6233b190a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "historial_prompts.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "historial_prompts"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b4f2a0cd65d5a60e",
+    "type": "split",
+    "children": [
+      {
+        "id": "89d75e798e049aee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "503ce0fb62d08b95",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "458ae3bfc939a9c5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "be8c5857ca77e49f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 386.5
+  },
+  "right": {
+    "id": "813012a3b6e10cf9",
+    "type": "split",
+    "children": [
+      {
+        "id": "719052b5767d9389",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b32ef22c8de43c6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "wiki/second_brain/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
+            }
+          },
+          {
+            "id": "ca3ce2b8fac759a6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "wiki/second_brain/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
+            }
+          },
+          {
+            "id": "bf31a08fca97ab25",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9704ff308ca82d88",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "cbb222e1607c81e5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "INSTALL.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of INSTALL"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "a9f5f5a6233b190a",
+  "lastOpenFiles": [
+    "GEMINI.md",
+    "_ANTIGRAVITY.md",
+    "lab4_1/oscill/index.md",
+    "lab4_1/oscill/Rigol_DS1000Z_Digital-Oscilloscope_Manual_1024.md",
+    "fuentes/requisitos/Metodología_de_informes_2026.md",
+    "fuentes/requisitos/rubrica.md",
+    "fuentes/requisitos/Experiencia_03.md",
+    "fuentes/requisitos/image.png",
+    "fuentes/apunte/6 Medición de Potencia, Factor de Potencia y Energía/6.2 Medición de potencia monofásica a frecuencia industrial/6.2.2 Instrumentos para medir potencia activa/6.2.2 Instrumentos para medir potencia activa.md",
+    "fuentes/apunte/6 Medición de Potencia, Factor de Potencia y Energía/6.2 Medición de potencia monofásica a frecuencia industrial/6.2.5 Medición de potencia reactiva/6.2.5 Medición de potencia reactiva.md",
+    "fuentes/apunte/6 Medición de Potencia, Factor de Potencia y Energía/6.2 Medición de potencia monofásica a frecuencia industrial/6.2.4 Ampliación de rangos/6.2.4 Ampliación de rangos.md",
+    "fuentes/apunte/6 Medición de Potencia, Factor de Potencia y Energía/6.2 Medición de potencia monofásica a frecuencia industrial/6.2.3 Modelo y conexiones del vatímetro/6.2.3 Modelo y conexiones del vatímetro.md",
+    "fuentes/apunte/6 Medición de Potencia, Factor de Potencia y Energía/6.2 Medición de potencia monofásica a frecuencia industrial/6.2.1 Generalidades/6.2.1 Generalidades.md",
+    "fuentes/apunte/6 Medición de Potencia, Factor de Potencia y Energía/6.2 Medición de potencia monofásica a frecuencia industrial/6.2 Medición de potencia monofásica a frecuencia industrial.md",
+    "fuentes/apunte/4 Medición de Tensión y Corriente Continua/4.4 Instrumentos electrónicos/4.4.5 Electrómetro/4.4.5 Electrómetro.md",
+    "fuentes/apunte/4 Medición de Tensión y Corriente Continua/4.5 Medición de resistencia/4.5 Medición de resistencia.md",
+    "fuentes/apunte/4 Medición de Tensión y Corriente Continua/4.4 Instrumentos electrónicos/4.4.4 Influencia sobre el circuito a medir/4.4.4 Influencia sobre el circuito a medir.md",
+    "fuentes/apunte/4 Medición de Tensión y Corriente Continua/4.4 Instrumentos electrónicos/4.4.3 Ampliación del rango de medida/4.4.3 Ampliación del rango de medida.md",
+    "fuentes/apunte/5 Medición de Tensión y Corriente Alterna/5.6 Voltímetros electrónicos/5.6.1 Principio de funcionamiento/5.6.1 Principio de funcionamiento.md",
+    "fuentes/apunte/5 Medición de Tensión y Corriente Alterna/5.6 Voltímetros electrónicos/5.6.2 Atenuador del voltímetro/5.6.2 Atenuador del voltímetro.md",
+    "fuentes/apunte/6 Medición de Potencia, Factor de Potencia y Energía/6.1 Introducción/6.1 Introducción.md",
+    "fuentes/apunte/6 Medición de Potencia, Factor de Potencia y Energía/6.3 Medición de potencia trifásica/6.3.4 Medición de potencia trifásica circuitos tetrafilares/6.3.4 Medición de potencia trifásica circuitos tetrafilares.md",
+    "fuentes/apunte/6 Medición de Potencia, Factor de Potencia y Energía/6.4 Medición del factor de potencia a frecuencia industrial/6.4.3 Cosfímetro electrónico/6.4.3 Cosfímetro electrónico.md",
+    "fuentes/apunte/6 Medición de Potencia, Factor de Potencia y Energía/6.4 Medición del factor de potencia a frecuencia industrial/6.4 Medición del factor de potencia a frecuencia industrial.md",
+    "fuentes/apunte/6 Medición de Potencia, Factor de Potencia y Energía/6.3 Medición de potencia trifásica/6.3.5 Medición de potencia reactiva trifásica/6.3.5 Medición de potencia reactiva trifásica.md",
+    "fuentes/apunte/6 Medición de Potencia, Factor de Potencia y Energía/6.3 Medición de potencia trifásica/6.3.3 Ejemplo de circuito desbalanceado/6.3.3 Ejemplo de circuito desbalanceado.md",
+    "fuentes/apunte/6 Medición de Potencia, Factor de Potencia y Energía/6.3 Medición de potencia trifásica/6.3.2 Medición de potencia trifásica circuitos trifilares/6.3.2 Medición de potencia trifásica circuitos trifilares.md",
+    "fuentes/apunte/_figures/image_6.png",
+    "fuentes/apunte/_figures/image_3.png",
+    "fuentes/apunte/_figures/image_1.png",
+    "lab4_1/oscill/figures/Rigol_DS1000Z_Digital-Oscilloscope_Manual_1024_99.png",
+    "lab4_1/oscill/figures/Rigol_DS1000Z_Digital-Oscilloscope_Manual_1024_98.png",
+    "lab4_1/oscill/figures/Rigol_DS1000Z_Digital-Oscilloscope_Manual_1024_97.png",
+    "lab4_1/oscill/figures/Rigol_DS1000Z_Digital-Oscilloscope_Manual_1024_96.png",
+    "lab4_1/oscill/figures/Rigol_DS1000Z_Digital-Oscilloscope_Manual_1024_94.png",
+    "lab4_1/oscill/figures/Rigol_DS1000Z_Digital-Oscilloscope_Manual_1024_95.png",
+    "lab4_1/oscill/figures",
+    "lab4_1/oscill/resultado_markdown/figures",
+    "lab4_1/oscill/resultado_markdown",
+    "lab4_1/oscill",
+    "lab4_1/oscill.zip",
+    "lab4_1/Informe_de_Laboratorio_Metrología_Exp4/NewDirectory2/NewDirectory1/NewDirectory1/Newfile3.csv",
+    "lab4_1/Informe_de_Laboratorio_Metrología_Exp4/NewDirectory2/NewDirectory1/NewDirectory1/Newfile2.csv",
+    "lab4_1/Informe_de_Laboratorio_Metrología_Exp4/NewDirectory2/NewDirectory1/NewDirectory1/Newfile1.csv",
+    "lab4_1/Informe_de_Laboratorio_Metrología_Exp4/NewDirectory2/NewDirectory1/Newfile2.txt",
+    "lab4_1/Informe_de_Laboratorio_Metrología_Exp4/NewDirectory2/NewDirectory1/Newfile1.txt",
+    "Untitled.canvas"
+  ]
+}

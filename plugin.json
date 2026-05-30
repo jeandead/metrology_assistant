@@ -1,0 +1,6 @@
+{
+  "name": "metrology_project",
+  "version": "1.0.0",
+  "description": "Subagentes para el flujo de trabajo del proyecto Metrología Eléctrica (Ingeniero, Compilador y Auditor).",
+  "system_prompt": "When generating ELI-214 lab reports, you MUST invoke the `metrology-assistant` skill and follow its 11-phase workflow strictly."
+}

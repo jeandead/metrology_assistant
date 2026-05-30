@@ -1,0 +1,1863 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.21)  27 MAY 2026 03:14
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**./main.tex
+(main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinek
+eys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.st
+y
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.
+sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.st
+y
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)) (C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitl
+estring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count283
+) (C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count284
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.st
+y
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen149
+\Hy@linkcounter=\count285
+\Hy@pagecounter=\count286
+ (C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count287
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4195.
+Package hyperref Info: Link nesting OFF on input line 4200.
+Package hyperref Info: Hyper index ON on input line 4203.
+Package hyperref Info: Plain pages OFF on input line 4210.
+Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4462.
+\c@Hy@tempcnt=\count288
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4801.
+\XeTeXLinkMargin=\dimen150
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.
+sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count289
+\Field@Width=\dimen151
+\Fld@charsize=\dimen152
+Package hyperref Info: Hyper figures OFF on input line 6078.
+Package hyperref Info: Link nesting OFF on input line 6083.
+Package hyperref Info: Hyper index ON on input line 6086.
+Package hyperref Info: backreferencing OFF on input line 6093.
+Package hyperref Info: Link coloring OFF on input line 6098.
+Package hyperref Info: Link coloring with OCG OFF on input line 6103.
+Package hyperref Info: PDF/A mode OFF on input line 6108.
+\Hy@abspage=\count290
+\c@Item=\count291
+\c@Hfootnote=\count292
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
+\Fld@listcount=\count293
+\c@bookmark@seq@number=\count294
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfile
+check.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniqueco
+unter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip51
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count295
+\float@exts=\toks18
+\float@box=\box53
+\@float@everytoks=\toks19
+\@floatcapt=\box54
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen153
+\ar@mcellbox=\box55
+\extrarowheight=\dimen154
+\NC@list=\toks20
+\extratabsurround=\skip52
+\backup@length=\skip53
+\ar@cellbox=\box56
+)
+\TX@col@width=\dimen155
+\TX@old@table=\dimen156
+\TX@old@col=\dimen157
+\TX@target=\dimen158
+\TX@delta=\dimen159
+\TX@cols=\count296
+\TX@ftn=\toks21
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip54
+\LTright=\skip55
+\LTpre=\skip56
+\LTpost=\skip57
+\LTchunksize=\count297
+\LTcapwidth=\dimen160
+\LT@head=\box57
+\LT@firsthead=\box58
+\LT@foot=\box59
+\LT@lastfoot=\box60
+\LT@gbox=\box61
+\LT@cols=\count298
+\LT@rows=\count299
+\c@LT@tables=\count300
+\c@LT@chunks=\count301
+\LT@p@ftn=\toks22
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/circuitikz\circuitikz.st
+y
+Package: circuitikz 2026/02/04{} The CircuiTikz circuit drawing package version
+ 1.8.5
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.s
+ty
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-
+common.tex
+\pgfutil@everybye=\toks23
+\pgfutil@tempdima=\dimen161
+\pgfutil@tempdimb=\dimen162
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-
+latex.def
+\pgfutil@abb=\box62
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.c
+ode.tex
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.s
+ty (C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cf
+g
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen163
+\Gin@req@width=\dimen164
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.s
+ty
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys
+.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.
+code.tex
+\pgfkeys@pathtoks=\toks24
+\pgfkeys@temptoks=\toks25
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeysl
+ibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks26
+))
+\pgf@x=\dimen165
+\pgf@y=\dimen166
+\pgf@xa=\dimen167
+\pgf@ya=\dimen168
+\pgf@xb=\dimen169
+\pgf@yb=\dimen170
+\pgf@xc=\dimen171
+\pgf@yc=\dimen172
+\pgf@xd=\dimen173
+\pgf@yd=\dimen174
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count302
+\c@pgf@countb=\count303
+\c@pgf@countc=\count304
+\c@pgf@countd=\count305
+\t@pgf@toka=\toks27
+\t@pgf@tokb=\toks28
+\t@pgf@tokc=\toks29
+\pgf@sys@id@count=\count306
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cf
+g
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys
+-pdftex.def
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys
+-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys
+softpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count307
+\pgfsyssoftpath@bigbuffer@items=\count308
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys
+protocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.
+tex
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.c
+ode.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser
+.code.tex
+\pgfmath@dimen=\dimen175
+\pgfmath@count=\count309
+\pgfmath@box=\box63
+\pgfmath@toks=\toks30
+\pgfmath@stack@operand=\toks31
+\pgfmath@stack@operation=\toks32
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
+ons.code.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
+ons.basic.code.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
+ons.trigonometric.code.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
+ons.random.code.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
+ons.comparison.code.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
+ons.base.code.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
+ons.round.code.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
+ons.misc.code.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfuncti
+ons.integerarithmetics.code.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.c
+ode.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.
+code.tex
+\c@pgfmathroundto@lastzeros=\count310
+))
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.t
+ex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+points.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen176
+\pgf@picmaxx=\dimen177
+\pgf@picminy=\dimen178
+\pgf@picmaxy=\dimen179
+\pgf@pathminx=\dimen180
+\pgf@pathmaxx=\dimen181
+\pgf@pathminy=\dimen182
+\pgf@pathmaxy=\dimen183
+\pgf@xx=\dimen184
+\pgf@xy=\dimen185
+\pgf@yx=\dimen186
+\pgf@yy=\dimen187
+\pgf@zx=\dimen188
+\pgf@zy=\dimen189
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+pathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen190
+\pgf@path@lasty=\dimen191
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+pathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen192
+\pgf@shorten@start@additional=\dimen193
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+scopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box64
+\pgf@hbox=\box65
+\pgf@layerbox@main=\box66
+\pgf@picture@serial@count=\count311
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+graphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen194
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+transformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen195
+\pgf@pt@y=\dimen196
+\pgf@pt@temp=\dimen197
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+quick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+objects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+pathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+arrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen198
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+shade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen199
+\pgf@sys@shading@range@num=\count312
+\pgf@shadingcount=\count313
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+image.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+external.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box67
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+layers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+transparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+patterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
+rdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodules
+hapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box68
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulep
+lot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcom
+p-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen256
+\pgf@nodesepend=\dimen257
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcom
+p-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.st
+y
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.
+code.tex))
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.
+tex))
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.c
+ode.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen258
+\pgffor@skip=\dimen259
+\pgffor@stack=\toks33
+\pgffor@toks=\toks34
+))
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
+\tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibra
+ryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count314
+\pgfplotmarksize=\dimen260
+)
+\tikz@lastx=\dimen261
+\tikz@lasty=\dimen262
+\tikz@lastxsaved=\dimen263
+\tikz@lastysaved=\dimen264
+\tikz@lastmovetox=\dimen265
+\tikz@lastmovetoy=\dimen266
+\tikzleveldistance=\dimen267
+\tikzsiblingdistance=\dimen268
+\tikz@figbox=\box69
+\tikz@figbox@bg=\box70
+\tikz@tempbox=\box71
+\tikz@tempbox@bg=\box72
+\tikztreelevel=\count315
+\tikznumberofchildren=\count316
+\tikznumberofcurrentchild=\count317
+\tikz@fig@count=\count318
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulem
+atrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count319
+\pgfmatrixcurrentcolumn=\count320
+\pgf@matrix@numberofcolumns=\count321
+)
+\tikz@expandcount=\count322
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
+/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
+/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibra
+ryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen269
+\pgfarrowlength=\dimen270
+\pgfarrowwidth=\dimen271
+\pgfarrowlinewidth=\dimen272
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
+/libraries\tikzlibrarybending.code.tex
+File: tikzlibrarybending.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleb
+ending.code.tex
+File: pgfmodulebending.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulen
+onlineartransformations.code.tex
+File: pgfmodulenonlineartransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgftransformnonlinearflatness=\dimen273
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibra
+rycurvilinear.code.tex
+File: pgflibrarycurvilinear.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@curvilinear@time@a=\dimen274
+\pgf@curvilinear@length@a=\dimen275
+\pgf@curvilinear@length@b=\dimen276
+\pgf@curvilinear@length@c=\dimen277
+\pgf@curvilinear@length@d=\dimen278
+)
+\pgf@arrows@the@rigidity=\dimen279
+))
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
+/libraries\tikzlibraryfpu.code.tex
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibra
+ryfpu.code.tex))
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirc.def
+ines.tex
+\pgf@circ@count@a=\count323
+\pgf@circ@count@b=\count324
+\pgf@circ@count@c=\count325
+\pgf@circ@res@up=\dimen280
+\pgf@circ@res@down=\dimen281
+\pgf@circ@res@zero=\dimen282
+\pgf@circ@res@left=\dimen283
+\pgf@circ@res@right=\dimen284
+\pgf@circ@res@other=\dimen285
+\pgf@circ@res@step=\dimen286
+\pgf@circ@res@temp=\dimen287
+\pgf@circ@Rlen=\dimen288
+\pgf@circ@scaled@Rlen=\dimen289
+\pgfstartlinewidth=\dimen290
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircutil
+s.tex
+\ctikz@scratchbox=\box73
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircpath
+.tex
+\ctikz@vif@count=\count326
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircshap
+es.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircmono
+poles.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircbipo
+les.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirctrip
+oles.tex
+\pgf@circ@res@count=\count327
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircquad
+poles.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircmult
+ipoles.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirclabe
+l.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircvolt
+age.tex
+\pgfcirc@labelshift=\dimen291
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirccurr
+ent.tex)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircflow
+.tex)) (C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks35
+\inpenc@posthook=\toks36
+) (C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLa
+TeX and XeLaTeX
+\babel@savecnt=\count328
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2068.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2070.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2072.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2073.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2074.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2076.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2101.
+\U@D=\dimen292
+\l@unhyphenated=\language79
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read3
+\bbl@dirlevel=\count329
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4196.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-
+spanish.tex)
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 4320.
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.ld
+f
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks37
+\es@quotdepth=\count330
+Package babel Info: Making " an active character on input line 570.
+))
+LaTeX Encoding Info:    Redeclaring text command \guillemotleft (encoding OT1) 
+on input line 13.
+LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding OT1)
+ on input line 13.
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count331
+\Gm@cntv=\count332
+\c@Gm@tempcnt=\count333
+\Gm@bindingoffset=\dimen293
+\Gm@wd@mp=\dimen294
+\Gm@odd@mp=\dimen295
+\Gm@even@mp=\dimen296
+\Gm@layoutwidth=\dimen297
+\Gm@layoutheight=\dimen298
+\Gm@layouthoffset=\dimen299
+\Gm@layoutvoffset=\dimen300
+\Gm@dimlist=\toks38
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip58
+\f@nch@offset@elh=\skip59
+\f@nch@offset@erh=\skip60
+\f@nch@offset@olh=\skip61
+\f@nch@offset@orh=\skip62
+\f@nch@offset@elf=\skip63
+\f@nch@offset@erf=\skip64
+\f@nch@offset@olf=\skip65
+\f@nch@offset@orf=\skip66
+\f@nch@height=\skip67
+\f@nch@footalignment=\skip68
+\f@nch@widthL=\skip69
+\f@nch@widthC=\skip70
+\f@nch@widthR=\skip71
+\@temptokenb=\toks39
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen301
+\captionmargin=\dimen302
+\caption@leftmargin=\dimen303
+\caption@rightmargin=\dimen304
+\caption@width=\dimen305
+\caption@indent=\dimen306
+\caption@parindent=\dimen307
+\caption@hangindent=\dimen308
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count334
+\c@continuedfloat=\count335
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+))
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box74
+\beforetitleunit=\skip72
+\aftertitleunit=\skip73
+\ttl@plus=\dimen309
+\ttl@minus=\dimen310
+\ttl@toksa=\toks40
+\titlewidth=\dimen311
+\titlewidthlast=\dimen312
+\titlewidthfirst=\dimen313
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip74
+\multirow@cntb=\count336
+\multirow@dima=\skip75
+\bigstrutjot=\dimen314
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip76
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks41
+\ex@=\dimen315
+))
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen316
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count337
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count338
+\leftroot@=\count339
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count340
+\DOTSCASE@=\count341
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box75
+\strutbox@=\box76
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen317
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count342
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count343
+\dotsspace@=\muskip18
+\c@parentequation=\count344
+\dspbrk@lvl=\count345
+\tag@help=\toks42
+\row@=\count346
+\column@=\count347
+\maxfields@=\count348
+\andhelp@=\toks43
+\eqnshift@=\dimen318
+\alignsep@=\dimen319
+\tagshift@=\dimen320
+\tagwidth@=\dimen321
+\totwidth@=\dimen322
+\lineht@=\dimen323
+\@envbody=\toks44
+\multlinegap=\skip77
+\multlinetaggap=\skip78
+\mathdisplay@stack=\toks45
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/titling\titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip79
+\thanksmargin=\skip80
+\droptitle=\skip81
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip82
+\enit@outerparindent=\dimen324
+\enit@toks=\toks46
+\enit@inbox=\box77
+\enit@count@id=\count349
+\enitdp@description=\count350
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count351
+\lst@gtempboxa=\box78
+\lst@token=\toks47
+\lst@length=\count352
+\lst@currlwidth=\dimen325
+\lst@column=\count353
+\lst@pos=\count354
+\lst@lostspace=\dimen326
+\lst@width=\dimen327
+\lst@newlines=\count355
+\lst@lineno=\count356
+\lst@maxwidth=\dimen328
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count357
+\lst@skipnumbers=\count358
+\lst@framebox=\box79
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
+))
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/svg\svg.sty
+Package: svg 2020/11/26 v2.02k (include SVG pictures)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbase.sty
+Package: scrbase 2026/02/02 v3.49.2 KOMA-Script package (KOMA-Script-independen
+t basics and keyval usage)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.sty
+Package: scrlfile 2026/02/02 v3.49.2 KOMA-Script package (file load hooks)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-hoo
+k.sty
+Package: scrlfile-hook 2026/02/02 v3.49.2 KOMA-Script package (using LaTeX hook
+s)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
+Package: scrlogo 2026/02/02 v3.49.2 KOMA-Script package (logo)
+)))
+Applying: [2021/05/01] Usage of raw or classic option list on input line 254.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line
+ 370.
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.st
+y
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+) (C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/ifplatform\ifplatform.st
+y
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/catchfile\catchfile.st
+y
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+))
+\c@svg@param@lastpage=\count359
+\svg@box=\box80
+\c@svg@param@currpage=\count360
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/transparent\transparent.
+sty
+Package: transparent 2025-06-23 v1.6 Transparency with color stacks
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/transparent\transparent-
+nometadata.sty
+Package: transparent-nometadata 2025-06-23 v1.6 Transparency via pdfTeX's color
+ stack (HO)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)))
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
+Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count361
+\rotFPtop=\skip83
+\rotFPbot=\skip84
+\rot@float@box=\box81
+\rot@mess@toks=\toks48
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip85
+\cftbeforetoctitleskip=\skip86
+\cftaftertoctitleskip=\skip87
+\cftbeforepartskip=\skip88
+\cftpartnumwidth=\skip89
+\cftpartindent=\skip90
+\cftbeforesecskip=\skip91
+\cftsecindent=\skip92
+\cftsecnumwidth=\skip93
+\cftbeforesubsecskip=\skip94
+\cftsubsecindent=\skip95
+\cftsubsecnumwidth=\skip96
+\cftbeforesubsubsecskip=\skip97
+\cftsubsubsecindent=\skip98
+\cftsubsubsecnumwidth=\skip99
+\cftbeforeparaskip=\skip100
+\cftparaindent=\skip101
+\cftparanumwidth=\skip102
+\cftbeforesubparaskip=\skip103
+\cftsubparaindent=\skip104
+\cftsubparanumwidth=\skip105
+\cftbeforeloftitleskip=\skip106
+\cftafterloftitleskip=\skip107
+\cftbeforefigskip=\skip108
+\cftfigindent=\skip109
+\cftfignumwidth=\skip110
+\c@lofdepth=\count362
+\c@lotdepth=\count363
+\cftbeforelottitleskip=\skip111
+\cftafterlottitleskip=\skip112
+\cftbeforetabskip=\skip113
+\cfttabindent=\skip114
+\cfttabnumwidth=\skip115
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
+\c@tracingmulticols=\count364
+\mult@box=\box82
+\multicol@leftmargin=\dimen329
+\c@unbalance=\count365
+\c@collectmore=\count366
+\doublecol@number=\count367
+\multicoltolerance=\count368
+\multicolpretolerance=\count369
+\full@width=\dimen330
+\page@free=\dimen331
+\premulticols=\dimen332
+\postmulticols=\dimen333
+\multicolsep=\skip116
+\multicolbaselineskip=\skip117
+\partial@page=\box83
+\last@line=\box84
+\mc@boxedresult=\box85
+\maxbalancingoverflow=\dimen334
+\mult@rightbox=\box86
+\mult@grightbox=\box87
+\mult@firstbox=\box88
+\mult@gfirstbox=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\c@minrows=\count370
+\c@columnbadness=\count371
+\c@finalcolumnbadness=\count372
+\last@try=\dimen335
+\multicolovershoot=\dimen336
+\multicolundershoot=\dimen337
+\mult@nat@firstbox=\box126
+\colbreak@box=\box127
+\mc@col@check@num=\count373
+\g__mc_curr_col_int=\count374
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/steinmetz\steinmetz.sty
+Package: steinmetz 2009/06/14 v1.0 Steinmetz symbol for electrotechnics
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/pict2e\pict2e.sty
+Package: pict2e 2020/09/30 v0.4b Improved picture commands (HjG,RN,JT)
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/pict2e\pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 112.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 114.
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/pict2e\p2e-pdftex.def
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks49
+\@arclen=\dimen338
+\@arcrad=\dimen339
+\pIIe@tempdima=\dimen340
+\pIIe@tempdimb=\dimen341
+\pIIe@tempdimc=\dimen342
+\pIIe@tempdimd=\dimen343
+\pIIe@tempdime=\dimen344
+\pIIe@tempdimf=\dimen345
+)
+\stm@phasebox=\box128
+\stm@phasedp=\skip118
+\stm@phaseht=\skip119
+\stm@phasetot=\skip120
+\stm@phasewd=\skip121
+) (C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+
+! LaTeX Error: Option clash for package circuitikz.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \usepackage
+                {amsmath}
+The package circuitikz has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [siunitx]
+Adding the global options:
+  ,siunitx
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen346
+\lightrulewidth=\dimen347
+\cmidrulewidth=\dimen348
+\belowrulesep=\dimen349
+\belowbottomsep=\dimen350
+\aboverulesep=\dimen351
+\abovetopsep=\dimen352
+\cmidrulesep=\dimen353
+\cmidrulekern=\dimen354
+\defaultaddspace=\dimen355
+\@cmidla=\count375
+\@cmidlb=\count376
+\@aboverulesep=\dimen356
+\@belowrulesep=\dimen357
+\@thisruleclass=\count377
+\@lastruleclass=\count378
+\@thisrulewidth=\dimen358
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
+Package: siunitx 2026-04-09 v3.5.3 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count379
+\l__siunitx_number_exponent_fixed_int=\count380
+\l__siunitx_number_min_decimal_int=\count381
+\l__siunitx_number_min_integer_int=\count382
+\l__siunitx_number_round_precision_int=\count383
+\l__siunitx_number_lower_threshold_int=\count384
+\l__siunitx_number_upper_threshold_int=\count385
+\l__siunitx_number_group_first_int=\count386
+\l__siunitx_number_group_size_int=\count387
+\l__siunitx_number_group_min_int=\count388
+\l__siunitx_number_group_minimum_int=\count389
+\l__siunitx_compound_count_int=\count390
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/translations\translation
+s.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+)
+\l__siunitx_table_tmp_box=\box129
+\l__siunitx_table_tmp_dim=\dimen359
+\l__siunitx_table_column_width_dim=\dimen360
+\l__siunitx_table_integer_box=\box130
+\l__siunitx_table_decimal_box=\box131
+\l__siunitx_table_uncert_box=\box132
+\l__siunitx_table_before_box=\box133
+\l__siunitx_table_after_box=\box134
+\l__siunitx_table_before_dim=\dimen361
+\l__siunitx_table_carry_dim=\dimen362
+\l__siunitx_unit_tmp_int=\count391
+\l__siunitx_unit_position_int=\count392
+\l__siunitx_unit_total_int=\count393
+\l__siunitx_sexagesimal_tmp_dim=\dimen363
+\l__siunitx_sexagesimal_marker_box=\box135
+\l__siunitx_sexagesimal_unit_box=\box136
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen364
+\c@nlinenum=\count394
+\TeXr@lab=\toks50
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/tools\hhline.sty
+Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
+)
+
+Package siunitx Info: Option "detect-all" has been deprecated in this release.
+(siunitx)             
+(siunitx)             Use "mode = match, propagate-math-font = true,
+(siunitx)             reset-math-version = false, reset-text-family = false,
+(siunitx)             reset-text-series = false, reset-text-shape = false,
+(siunitx)             text-family-to-math = true, text-series-to-math = true"
+(siunitx)             as a replacement.
+
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
+\everycr=\toks51
+\minrowclearance=\skip122
+\rownum=\count395
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
+/libraries\tikzlibraryangles.code.tex
+File: tikzlibraryangles.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
+/libraries\tikzlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count396
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count397
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 91.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+10.
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
+ex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count398
+) (main.aux
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+Package babel Info: 'spanish' activates 'spanish' shorthands.
+(babel)             Reported on input line 9.
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+Package hyperref Info: Link coloring ON on input line 110.
+ (main.out) (main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
+i
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count399
+\scratchdimen=\dimen365
+\scratchbox=\box137
+\nofMPsegments=\count400
+\nofMParguments=\count401
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count402
+\MPscratchDim=\dimen366
+\MPnumerator=\count403
+\makeMPintoPDFobject=\count404
+\everyMPtoPDFconversion=\toks53
+)
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
+se.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cf
+g
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+LaTeX Info: Redefining \. on input line 110.
+LaTeX Info: Redefining \% on input line 110.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
+* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=443.57848pt
+* \textheight=652.70622pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count405
+(
+! Use of \\svg@quotes@remove doesn't match its definition.
+\@checkend #1->\def \reserved@a {
+                                 #1}\ifx \reserved@a \@currenvir \else \@bad...
+l.1 '"inkscape"'
+                 is not recognized as an internal or external command,
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+! LaTeX Error: \begin{document} ended by \end{quoting}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 '"inkscape"'
+                 is not recognized as an internal or external command,
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Too many }'s.
+\svg@tempa ...@tempa {\@@input |"'inkscape' -V " }
+                                                  
+l.110 \begin{document}
+                      
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+Package svg Warning: No version of Inkscape was detected by invoking
+(svg)                `inkscape -V'
+(svg)                so the Inkscape export will fail quite sure as the
+(svg)                command is probably unknown to your OS. You could set
+(svg)                `inkscapeversion=<version>' manually but this is very
+(svg)                unlikely to work on input line 110.
+
+! Extra \endgroup.
+\svg@@ink@ver@detect ...pe \m@ne .\@nil \endgroup 
+                                                  
+l.110 \begin{document}
+                      
+Things are pretty mixed up, but I think the worst is over.
+
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\trans
+lations-basic-dictionary-spanish.trsl
+File: translations-basic-dictionary-spanish.trsl (spanish translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `spanish'. on input line 110.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[1{C:/Users/Jean/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Jea
+n/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}
+
+]
+<logoDepEliUSM.png, id=124, 924.45375pt x 131.49126pt>
+File: logoDepEliUSM.png Graphic file (type png)
+<use logoDepEliUSM.png>
+Package pdftex.def Info: logoDepEliUSM.png  used on input line 115.
+(pdftex.def)             Requested size: 377.0444pt x 53.62885pt.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+26.
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.146 \end{titlepage}
+                      [1{C:/Users/Jean/AppData/Local/Programs/MiKTeX/fonts/enc/
+dvips/lm/lm-ts1.enc} <./logoDepEliUSM.png>] (main.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+.
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+2.
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+2.
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(C:\Users\Jean\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.153 \newpage
+               [1] (sections/1resumen.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 1.
+) (sections/2introduccion.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[2{C:/Users/Jean/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc
+}{C:/Users/Jean/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}
+]) (sections/3marco_teorico.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[3]
+
+pdfTeX warning: pdflatex.exe (file ./recursos/ammeter.pdf): PDF inclusion: foun
+d PDF version <1.7>, but at most version <1.5> allowed
+<recursos/ammeter.pdf, id=177, 614.295pt x 794.97pt>
+File: recursos/ammeter.pdf Graphic file (type pdf)
+<use recursos/ammeter.pdf>
+Package pdftex.def Info: recursos/ammeter.pdf  used on input line 28.
+(pdftex.def)             Requested size: 329.76663pt x 146.24686pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[4 <./recursos/ammeter.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[5]
+<recursos/kelvin.pdf, id=204, 137.99385pt x 108.56183pt>
+File: recursos/kelvin.pdf Graphic file (type pdf)
+<use recursos/kelvin.pdf>
+Package pdftex.def Info: recursos/kelvin.pdf  used on input line 61.
+(pdftex.def)             Requested size: 221.78923pt x 174.49593pt.
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6{C:/Users/Jean/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc
+} <./recursos/kelvin.pdf>] (sections/3.5trabajoprevio.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7]
+<recursos/imagen_2025-10-22_013807311.png, id=227, 1268.74pt x 784.9325pt>
+File: recursos/imagen_2025-10-22_013807311.png Graphic file (type png)
+<use recursos/imagen_2025-10-22_013807311.png>
+Package pdftex.def Info: recursos/imagen_2025-10-22_013807311.png  used on inpu
+t line 35.
+(pdftex.def)             Requested size: 310.50357pt x 192.10054pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8 <./recursos/imagen_2025-10-22_013807311.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[9]
+<recursos/circuito_contrastacion.pdf, id=239, 279.65979pt x 152.21266pt>
+File: recursos/circuito_contrastacion.pdf Graphic file (type pdf)
+<use recursos/circuito_contrastacion.pdf>
+Package pdftex.def Info: recursos/circuito_contrastacion.pdf  used on input lin
+e 77.
+(pdftex.def)             Requested size: 310.50357pt x 168.99983pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10 <./recursos/circuito_contrastacion.pdf>]
+<recursos/circuito_validacion.pdf, id=279, 295.18279pt x 150.59964pt>
+File: recursos/circuito_validacion.pdf Graphic file (type pdf)
+<use recursos/circuito_validacion.pdf>
+Package pdftex.def Info: recursos/circuito_validacion.pdf  used on input line 1
+13.
+(pdftex.def)             Requested size: 310.50357pt x 158.42842pt.
+
+Overfull \hbox (54.41054pt too wide) in paragraph at lines 124--135
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11 <./recursos/circuito_validacion.pdf>])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12] (sections/4experiencia.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[13]) (sections/5datos.tex
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[14]
+Overfull \hbox (9.96927pt too wide) in paragraph at lines 50--60
+ [][] 
+ []
+
+
+Overfull \hbox (9.96927pt too wide) in paragraph at lines 66--76
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (9.96927pt too wide) in paragraph at lines 82--92
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[15]
+Package svg Info: Calling Inkscape on input line 100.
+runsystem(inkscape "recursos/LinAmp.svg" -D --export-latex --export-filename="L
+inAmp_svg-tex.pdf")...executed.
+
+runsystem(inkscape "recursos/LinAmp.svg" -D --export-latex \relax --without-gui
+ --export-pdf="LinAmp_svg-tex.pdf")...executed.
+
+
+
+! Package svg Error: Inkscape version not detected.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 ...idth=0.80\textwidth]{recursos/LinAmp.svg}
+                                                  
+It was tried to invoke `inkscape'
+for file "recursos/LinAmp.svg"
+but no result was produced. Check the log file
+and set `inkscapeversion=<version>' manually.
+
+runsystem(inkscape "recursos/LinAmp.svg" -D --export-latex --export-filename="L
+inAmp_svg-tex.pdf")...executed.
+
+
+Package svg Warning: The export with Inkscape failed for file
+(svg)                `recursos/LinAmp.svg'
+(svg)                Troubleshooting: Please check in the log file how
+(svg)                the invocation of Inkscape took place and try to
+(svg)                execute it yourself in the terminal on input line 100.
+
+
+! Package svg Error: File `LinAmp_svg-tex.pdf' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 ...idth=0.80\textwidth]{recursos/LinAmp.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/LinAmp_svg-tex.pdf'
+although `recursos/LinAmp.svg' was found.
+
+
+! Package svg Error: File `LinAmp_svg-tex.pdf_tex' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 ...idth=0.80\textwidth]{recursos/LinAmp.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/LinAmp_svg-tex.pdf_tex'
+although `recursos/LinAmp.svg' was found.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[17]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[18]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[19]
+Overfull \hbox (12.29826pt too wide) in paragraph at lines 257--278
+ [][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[20])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21] (sections/8conclusiones.tex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[22] (main.aux
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+ ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 7E1F266D46A06D55AB19AFEC53302F64;5745.
+ ) 
+Here is how much of TeX's memory you used:
+ 51560 strings out of 467870
+ 1223952 string characters out of 5418839
+ 1892090 words of memory out of 5000000
+ 79716 multiletter control sequences out of 15000+600000
+ 685304 words of font info for 80 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 117i,21n,121p,1080b,1171s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Jean/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mbx10.pfb><C:/Users/Jean/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb><C:/Users/Jean/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi7.pfb><C:/Users/Jean/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb><C:/Users/Jean/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Jean/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Jean/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Jean/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Jean/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/Jean/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Jean/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Jean/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Jean/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Jean/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/lm/lmr10.pfb><C:/Users/Jean/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/lm/lmr12.pfb><C:/Users/Jean/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/lm/lmr6.pfb><C:/Users/Jean/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/lm/lmr8.pfb><C:/Users/Jean/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/lm/lmri12.pfb><C:/Users/Jean/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/lm/lmsy10.pfb><C:/Users/Jean/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/lm/lmsy8.pfb>
+Output written on main.pdf (24 pages, 772868 bytes).
+PDF statistics:
+ 488 PDF objects out of 1000 (max. 8388607)
+ 84 named destinations out of 1000 (max. 500000)
+ 273 words of extra memory for PDF output out of 10000 (max. 10000000)
+

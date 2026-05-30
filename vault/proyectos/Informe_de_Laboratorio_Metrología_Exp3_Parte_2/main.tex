@@ -1,0 +1,189 @@
+\documentclass[12pt]{article}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{circuitikz}
+% (opcional, si quieres \si{\ohm}):
+% \usepackage{siunitx}
+\usepackage{tabularx} % en el preámbulo
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, mexico]{babel}
+\usepackage{graphicx}
+\usepackage[letterpaper, margin=2.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[justification=centering]{caption}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{multirow}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{titling}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{svg}
+\usepackage{rotating}
+\usepackage{tocloft}
+\usepackage{multicol}
+\usepackage{steinmetz}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{multirow}
+\usepackage[siunitx]{circuitikz}
+\usepackage{amsmath} 
+\usepackage{booktabs} 
+
+
+
+\usepackage{siunitx}
+\usepackage{siunitx,makecell,multirow,hhline}
+\sisetup{output-decimal-marker = {,}, detect-all = true}
+\newcommand{\thickrule}{\Xhline{1.1pt}}   % borde superior/inferior más grueso
+\setlength{\arrayrulewidth}{0.6pt}
+\renewcommand\arraystretch{1.2}
+\usepackage{siunitx,booktabs,makecell,xcolor,colortbl}
+\sisetup{output-decimal-marker = {,}, detect-all = true} % coma decimal
+% sombreado alternado opcional (comenta si no lo quieres)
+\rowcolors{2}{gray!6}{white}
+
+\usetikzlibrary{angles, arrows.meta, quotes}
+\usepackage{siunitx}
+\DeclareSIUnit\voltampere{VA}   % apparent power
+\DeclareSIUnit\var{VAR}   
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\graphicspath{{Recursos/}} % carpeta donde están los PDF
+
+
+\lstdefinelanguage{Matlab}{
+  keywords={break,case,catch,continue,else,elseif,end,for,function,
+      global,if,otherwise,persistent,return,switch,try,while},
+  keywordstyle=\color{blue}\bfseries,
+  identifierstyle=\color{black},
+  commentstyle=\color{gray}\ttfamily,
+  stringstyle=\color{red},
+  sensitive=true
+}
+
+\lstset{
+  language=Matlab,
+  frame=single,
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{red},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  numbersep=5pt,
+  showstringspaces=false,
+  breaklines=true,
+  captionpos=b
+}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=green,
+  urlcolor=cyan
+}
+
+% Márgenes y espacio
+\geometry{top=2.5cm, bottom=2.5cm, left=3cm, right=3cm}
+\setlength{\parskip}{0.8em}
+\setlength{\parindent}{0pt}
+
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ELI-214 Metrología Eléctrica}
+\rfoot{Experiencia 3}
+\lfoot{USM 2025-2}
+\rhead{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\arraystretch}{1.5}
+
+
+\begin{document}
+
+% -------------------- PORTADA --------------------
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.85\textwidth]{logoDepEliUSM.png}
+    
+
+
+    \vspace{2.4cm}
+    \Large \textbf{[ELI214] - Metrología Eléctrica}\\
+    
+    \vspace{1.2cm}
+    \rule{\textwidth}{0.4pt}
+    
+    \vspace{0.5cm}
+    \Huge \textbf{Experiencia N° 3}
+    
+    \vspace{0.3cm}
+    \large  “Parte 2: Amperímetro de bobina móvil”
+    
+    \vspace{0.5cm}
+    \rule{\textwidth}{0.4pt}
+    
+    \vfill
+    \begin{flushleft}
+        \textbf{Autores:} \\
+        Cristóbal Daniel Jara Poblete\\
+        Jean Franco Gatica Turra \\[1em]
+
+        \textbf{Grupo 4}\\[1em]
+        
+        \textbf{Profesor:} Juan Guillermo Navarrete \'Alvarez\\[1em]
+        
+        \textbf{Fecha:} 15 de octubre de 2025
+    \end{flushleft}
+\end{titlepage}
+
+\newpage
+
+\begin{small}  % o \footnotesize o \scriptsize
+\tableofcontents
+\end{small}
+\newpage
+
+\section{Resumen Ejecutivo}
+\input{sections/1resumen}
+
+\section{Introducción}
+\input{sections/2introduccion}
+
+\section{Marco Teórico}
+\input{sections/3marco_teorico}
+
+\newpage
+\section{Trabajo Previo}
+\input{sections/3.5trabajoprevio}
+
+\newpage
+\section{Desarrollo de la Experiencia}
+\input{sections/4experiencia}
+
+\section{Resultados}
+\input{sections/5datos}
+
+\newpage
+\section{Conclusiones}
+\input{sections/8conclusiones}
+
+%\newpage
+%\section{Anexos}
+%\input{sections/9anexos}
+
+
+
+%\section{Referencias}
+%\bibliographystyle{IEEEtran}
+%\bibliography{sections/10referencias}
+
+\end{document}

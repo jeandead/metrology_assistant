@@ -1,0 +1,286 @@
+% --- INICIO DEL CÓDIGO PARA AGREGAR ---
+% (Asegúrate de tener \usepackage{booktabs} en tu preámbulo)
+
+
+En esta sección se presentan los resultados obtenidos del montaje práctico del amperímetro. Mencionar que durante la etapa de calibración inicial, el potenciómetro destinado al ajuste de $R_c$ (resistencia de calibración) sufrió una falla, quemándose e impidiendo su ajuste posterior. 
+
+Debido a este inconveniente, con autorización del profesor, se hizo variar la fuente de voltaje para controlar la corriente que pasaba por el circuito considerando solo la resistencia de 100 $\Omega$ contemplada en el diseño del circuito de calibración. Por lo mismo, para las pruebas de linealidad, en lugar de ajustar la resistencia de prueba con el potenciómetro, se optó por variar directamente la tensión de la fuente ($V_{cc}$) para generar las distintas corrientes de prueba, las cuales fueron monitoreadas en todo momento por el multímetro digital actuando como patrón.
+
+\subsection{Calibración y Error de Rango}
+
+La calibración se realizó exitosamente para el rango de 100 mA. Se ajustó la fuente hasta que el multímetro patrón midió 100 mA, y en ese punto se ajustó $R_c$ hasta que la aguja del galvanómetro indicó plena escala.
+
+Luego, con ese valor de $R_c$ fijo, se procedió a medir el error en los otros rangos. Para ello, se ajustó la fuente de tensión hasta que el amperímetro construido marcó el fondo de escala (50 mA y 10 mA, respectivamente) y se registró la corriente real que estaba midiendo el patrón. Los resultados se resumen en la Tabla \ref{tab:calibracion}.
+
+\begin{table}[h!]
+    \centering
+    \caption{Contrastación de fondo de escala con $R_c$ fija (calibrada para 100 mA). Los datos provienen de la hoja de resultados (Imagen 2).}
+    \label{tab:calibracion}
+    \begin{tabular}{cccc}
+        \toprule
+        \textbf{$V_{cc}$} & 
+        \textbf{Rango} & \textbf{Lectura Amperímetro} & \textbf{Patrón} \\
+        \midrule
+        11 & 100 mA & 100 mA & 100 mA \\
+        7 & 50 mA & 50 mA & 58.6 mA \\
+        1,9 & 10 mA & 10 mA & 11.64 mA \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Se observa un error considerable en los rangos inferiores, lo cual era esperado, ya que el valor de $R_c$ óptimo es distinto para cada rango (como se calculó en el Trabajo Previo), pero en la práctica se utilizó un valor único fijado para el rango mayor.
+
+Los cálculos del error son los siguientes:
+\begin{itemize}
+\item \textbf{Rango 100 mA:} El error es $0.0\%$, ya que este fue el punto de calibración.
+\item \textbf{Rango 50 mA:} $\text{Error \%} = \frac{|50 - 58.6|}{58.6} \times 100\% = 14.67\%$.
+\item \textbf{Rango 10 mA:} $\text{Error \%} = \frac{|10 - 11.64|}{11.64} \times 100\% = 14.09\%$.
+\end{itemize}
+
+Estos resultados demuestran que el instrumento, al ser calibrado para el rango máximo, subestima considerablemente la corriente en los rangos inferiores. Es decir, para que la aguja marque "50 mA", se requiere una corriente real de 58.6 mA por ejemplo.
+
+\subsection{Verificación de Linealidad}
+
+Posteriormente, se verificó la linealidad de cada rango variando la tensión de la fuente para obtener distintos puntos de medición. Las Tablas \ref{tab:lin100}, \ref{tab:lin50} y \ref{tab:lin10} (basadas en la Imagen 1) comparan la lectura del patrón (DMM) con la del amperímetro construido.
+
+\begin{table}[h!]
+    \centering
+    \caption{Linealidad del Rango 100 mA.}
+    \label{tab:lin100}
+    \begin{tabular}{ccc}
+        \toprule
+        \textbf{Tensión Fuente (V)} & \textbf{Corriente Patrón (mA)} & \textbf{Lectura Amperímetro (mA)} \\
+        \midrule
+        10.0 & 92.8 & 94.5 \\
+        8.0 & 73.5 & 78 \\
+        5.4 & 48.8 & 56 \\
+        3.3 & 30.79 & 36 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \caption{Linealidad del Rango 50 mA.}
+    \label{tab:lin50}
+    \begin{tabular}{ccc}
+        \toprule
+        \textbf{Tensión Fuente (V)} & \textbf{Corriente Patrón (mA)} & \textbf{Lectura Amperímetro (mA)} \\
+        \midrule
+        5.6 & 48.8 & 50 \\
+        3.8 & 33.39 & 36 \\
+        2.5 & 22.36 & 26 \\
+        1.1 & 9.95 & 12 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \caption{Linealidad del Rango 10 mA.}
+    \label{tab:lin10}
+    \begin{tabular}{ccc}
+        \toprule
+        \textbf{Tensión Fuente (V)} & \textbf{Corriente Patrón (mA)} & \textbf{Lectura Amperímetro (mA)} \\
+        \midrule
+        1.5 & 9.55 & 10 \\
+        1.2 & 7.58 & 8 \\
+        0.6 & 4.02 & 4.6 \\
+        0.2 & 1.71 & 2 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsubsection{Análisis Gráfico de Linealidad}
+
+Para analizar visualmente la linealidad del instrumento, se graficó la corriente medida por el amperímetro construido ($I_a$) en función de la corriente real medida por el patrón ($I_p$). El resultado se presenta en la Figura \ref{fig:linealidad_amp}.
+
+\begin{figure}[h!]
+    \centering
+    \includesvg[width=0.80\textwidth]{recursos/LinAmp.svg}
+    \caption{Gráfico de linealidad $I_a$ vs. $I_p$ para los tres rangos,
+    con sus respectivos ajustes lineales ($I_a = m \cdot I_p + b$) y
+    coeficientes de determinación ($R^2$).}
+    \label{fig:linealidad_amp}
+\end{figure}
+
+Del gráfico se puede extraer que, tal como se esperaba, existe un comportamiento claramente lineal en los tres rangos. Esto se confirma cuantitativamente con los coeficientes de determinación ($R^2$), que en todos los casos son superiores a 0.996, indicando un ajuste lineal casi perfecto. Este comportamiento se fundamenta en el marco teórico, ya que la corriente que circula por el galvanómetro ($I_g$) es linealmente proporcional a la corriente total del circuito ($I_p$) a través de un factor constante para cada rango, dado por las resistencias $R_g$, $R_{sh}$ y $R_c$. La lectura final del amperímetro ($I_a$) es, a su vez, la corriente $I_g$ multiplicada por un factor de escala constante (ej. 100 en el rango de 100 mA, 50 en el de 50 mA, etc.). Por lo tanto, la relación entre la lectura $I_a$ y la corriente patrón $I_p$ debe ser lineal, siguiendo la ecuación $I_a = m \cdot I_p + b$.
+
+Sin embargo, al analizar los coeficientes específicos del ajuste, se observa una situación bastante anómala. El rango de 10 mA presenta un comportamiento casi ideal, con una pendiente $m=1.01$ (muy cercana a 1) y un intercepto $b=0.38$ mA (muy cercano a 0). En contraste directo, el rango de 100 mA, que supuestamente fue el rango utilizado para la calibración inicial (Sección 6.1), muestra la mayor desviación: una pendiente $m=0.94$ y un gran intercepto $b=8.62$ mA. El rango de 50 mA también presenta un offset considerable ($b=3.23$ mA).
+
+Esta fuerte discrepancia sugiere una fuente de error externa que va más allá del uso de un solo $R_c$. Los datos del gráfico de linealidad contradicen la calibración reportada. Es altamente probable que, en algún momento entre la calibración inicial (donde se ajustó $R_c$ para 100 mA) y la ejecución de estas pruebas de linealidad, el instrumento haya sido recalibrado, intencional o accidentalmente, para que la plena escala coincidiera con el rango de 10 mA. Esto explicaría por qué el ajuste del rango de 10 mA es casi perfecto, mientras que los rangos superiores, especialmente el de 100 mA, heredan un error sistemático tan significativo.
+
+\subsection{Prueba en Circuito de Carga Paralelo}
+
+Finalmente, se implementó el circuito de carga en paralelo (diseñado en la sección \ref{sec:paralelo}) para simular una situación de medición real. Se midió la corriente en cada rama ($R_1, R_2, R_3$) y la corriente total de la fuente.
+
+Para estas mediciones, se utilizaron los valores de resistencia calculados en el trabajo previo ($R_1=1\text{ k}\Omega$, $R_2=330~\Omega$, $R_3=220~\Omega$). Los valores teóricos de corriente (asumiendo $V_{cc}=10~V$) son: $I_1 = 10.0$ mA, $I_2 = 30.3$ mA, $I_3 = 45.4$ mA, y $I_{\text{Fuente}} \approx 85.7$ mA.
+
+La Tabla \ref{tab:paralelo} (basada en los datos simulados a partir de las mediciones del patrón) resume los resultados, donde se contrasta la lectura del amperímetro construido y la del patrón al medir en cada rama.
+
+\begin{table}[h!]
+    \centering
+    \caption{Mediciones en Circuito de Carga Paralelo.}
+    \label{tab:paralelo}
+    \begin{tabular}{cccc}
+        \toprule
+        \makecell{\textbf{Elemento}\\\textbf{Medido}\\\textbf{(Teórico)}} & 
+        \makecell{\textbf{Rango}\\\textbf{Usado}} & 
+        \makecell{\textbf{Corriente}\\\textbf{Patrón}\\\textbf{(mA)}} & 
+        \makecell{\textbf{Lectura}\\\textbf{Amperímetro}\\\textbf{(mA)}} \\
+        \midrule
+        $R_1$ (10.0 mA) & 10 mA & 8.1 & 8.6 \\
+        $R_1$ (10.0 mA) & 50 mA & 8.5 & 11.5 \\
+        \midrule
+        $R_2$ (30.3 mA) & 50 mA & 19.6 & 22.0 \\
+        $R_2$ (30.3 mA) & 100 mA & 19.8 & 27.0 \\
+        \midrule
+        $R_3$ (45.4 mA) & 50 mA & 24.9 & 27.5 \\
+        $R_3$ (45.4 mA) & 100 mA & 25.3 & 32.0 \\
+        \midrule
+        $I_{\text{Fuente}}$ (85.7 mA) & 100 mA & 34.3 & 41.0 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+Es de gran interés observar el efecto de carga del instrumento. Por ejemplo, al medir la corriente en $R_1$ (teórica 10.0 mA), el patrón mide 8.1 mA cuando se usa el rango de 10 mA del amperímetro, pero mide 8.5 mA cuando se usa el rango de 50 mA. Esto se debe a que la resistencia interna del amperímetro ($R_A$) cambia con el rango seleccionado, perturbando el circuito de forma distinta en cada caso.
+
+\subsubsection{Análisis de Error y Efecto de Carga}
+
+A partir de los datos de la Tabla \ref{tab:paralelo}, se pueden realizar dos análisis de error distintos. Primero, se analiza el error de nuestro amperímetro construido, comparando su lectura ($I_a$) con el valor real dado por el patrón ($I_p$). El error porcentual se calcula como $\text{Error \%} = \frac{|I_a - I_p|}{I_p} \times 100\%$. Los resultados se resumen en la Tabla \ref{tab:paralelo_error_medicion}.
+
+\begin{table}[h!]
+    \centering
+    \caption{Error de Medición del amperímetro (Lectura vs. Patrón).}
+    \label{tab:paralelo_error_medicion}
+    \begin{tabular}{ccccc}
+        \toprule
+        \textbf{Elemento} & \textbf{Rango} & \textbf{Patrón ($I_p$)} & \textbf{Lectura ($I_a$)} & \textbf{Error \%} \\
+        \midrule
+        $R_1$ & 10 mA & 8.1 mA & 8.6 mA & 6.17 \% \\
+        $R_1$ & 50 mA & 8.5 mA & 11.5 mA & 35.29 \% \\
+        \midrule
+        $R_2$ & 50 mA & 19.6 mA & 22.0 mA & 12.24 \% \\
+        $R_2$ & 100 mA & 19.8 mA & 27.0 mA & 36.36 \% \\
+        \midrule        
+        $R_3$ & 50 mA & 24.9 mA & 27.5 mA & 10.44 \% \\
+        $R_3$ & 100 mA & 25.3 mA & 32.0 mA & 26.48 \% \\
+        \midrule
+        $I_{\text{Fuente}}$ & 100 mA & 34.3 mA & 41.0 mA & 19.53 \% \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Las mediciones del amperímetro construido presentan errores considerables, particularmente acentuados en los rangos superiores (50 mA y 100 mA). Esto es coherente con los resultados de la calibración y el análisis de linealidad (el fuerte "offset" o intercepto $b$), confirmando que el instrumento arrastra un error sistemático grande para esas escalas, mientras que en el rango de 10 mA el error se mantiene relativamente bajo (alrededor del 6\%).
+
+\newpage
+En segundo lugar, se analiza el efecto de carga o la perturbación que nuestro amperímetro introduce en el circuito. Para esto, comparamos la corriente teórica que debería fluir por la rama (ej. $I_{\text{teo}} = 10V / R_1$) con la corriente real que fluyó una vez que el amperímetro fue insertado (medida por el patrón, $I_p$). El error porcentual se calcula como $\text{Error \%} = \frac{|I_p - I_{\text{teo}}|}{I_{\text{teo}}} \times 100\%$.
+
+\begin{table}[h!]
+    \centering
+    \caption{Efecto de Carga (Perturbación del Sistema).}
+    \label{tab:paralelo_error_carga}
+    \begin{tabular}{ccccc}
+        \toprule
+        \textbf{Elemento} & \textbf{Teórico ($I_{\text{teo}}$)} & \textbf{Rango Usado} & \textbf{Patrón ($I_p$)} & \textbf{Perturbación \%} \\
+        \midrule
+        $R_1$ & 10.0 mA & 10 mA & 8.1 mA & 19.00 \% \\
+        $R_1$ & 10.0 mA & 50 mA & 8.5 mA & 15.00 \% \\
+        \midrule
+        $R_2$ & 30.3 mA & 50 mA & 19.6 mA & 35.31 \% \\
+        $R_2$ & 30.3 mA & 100 mA & 19.8 mA & 34.65 \% \\
+        \midrule
+        $R_3$ & 45.4 mA & 50 mA & 24.9 mA & 45.15 \% \\
+        $R_3$ & 45.4 mA & 100 mA & 25.3 mA & 44.27 \% \\
+        \midrule
+        $I_{\text{Fuente}}$ & 85.7 mA & 100 mA & 34.3 mA & 59.98 \% \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+A partir de la tabla \ref{tab:paralelo_error_carga} se observa un fenómeno sumamente revelador: la introducción del amperímetro perturba el circuito de manera masiva. Las perturbaciones varían desde un 15\% hasta casi un 60\% en el caso de la medición de la corriente total de la fuente. 
+
+Por diseño, un amperímetro inserta una resistencia interna ($R_A$) en serie con el tramo donde mide. En nuestro diseño, debido a la resistencia limitadora de 100 $\Omega$ que domina el ajuste, la $R_A$ resultante es muy alta (del orden de 170-220 $\Omega$ dependiendo del rango). Al intentar medir ramas de baja resistencia, como $R_2$ (330 $\Omega$) o $R_3$ (220 $\Omega$), o al poner el instrumento en serie con la fuente ($R_{\text{eq}} \approx 116\text{ }\Omega$), el instrumento casi duplica la resistencia total de la rama, causando caídas abruptas en la corriente real ($I_p$).
+
+Esto ilustra perfectamente el principio de efecto de carga: el acto de medir altera de manera drástica el circuito si el instrumento no cuenta con una impedancia ideal (en este caso, una $R_A$ que debiese tender a cero). Además, se aprecia que los distintos rangos (con distintas $R_A$) introducen niveles ligeramente diferentes de perturbación.
+
+
+
+
+
+
+
+
+
+\subsection{Error escala lineal}
+
+
+
+ Error corregido por calibración (error de exactitud): 
+Si se utiliza la ecuación inversa de la recta de ajuste como función de calibración, se puede estimar la corriente patrón real a partir de una lectura del instrumento:
+
+\begin{equation}
+I_{a,\text{corr}} = \frac{I_a - b}{m}
+\end{equation}
+
+y definir el error de exactitud corregido como:
+
+\begin{equation}
+\varepsilon_{\text{cal}} (\%) = 
+\frac{\left| I_{a,\text{corr}} - I_p \right|}{I_p} \times 100
+\end{equation}
+
+Este error refleja la precisión real del instrumento una vez que sus desviaciones sistemáticas son neutralizadas matemáticamente mediante el modelo lineal obtenido en las pruebas previas.
+
+\begin{table}[h!]
+    \centering
+    \caption{Coeficientes del ajuste lineal para cada rango del amperímetro.}
+    \label{tab:coeficientes_lineales}
+    \begin{tabular}{ccc}
+        \toprule
+        \makecell{\textbf{Rango}} &
+        \makecell{\textbf{Pendiente}\\$(m)$} &
+        \makecell{\textbf{Intercepto}\\$(b)$ (mA)} \\
+        \midrule
+        100 mA & 0.94 & 8.62 \\
+        50 mA  & 0.97 & 3.23 \\
+        10 mA  & 1.01 & 0.38 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \caption{Mediciones en circuito de carga paralelo con corrección matemática lineal.}
+    \label{tab:paralelo_corr3}
+    \begin{tabular}{cccccc}
+        \toprule
+        \makecell{\textbf{Elemento}\\\textbf{Medido}\\\textbf{(Teórico)}} &
+        \makecell{\textbf{Rango}\\\textbf{Usado}} &
+        \makecell{\textbf{Corriente}\\\textbf{Patrón}\\\textbf{(mA)}} &
+        \makecell{\textbf{Lectura}\\\textbf{Amperímetro}\\\textbf{(mA)}} &
+        \makecell{\textbf{Valor}\\\textbf{Corregido}\\\textbf{$I_{a,\text{corr}}$ (mA)}} &
+        \makecell{\textbf{Error}\\\textbf{corregido}\\\textbf{(\%)}} \\
+        \midrule
+        $R_1$ (10.0 mA) & 10 mA  & 8.1  & 8.6  & 8.14  & 0.49 \\
+        $R_1$ (10.0 mA) & 50 mA  & 8.5  & 11.5 & 8.53  & 0.35 \\
+        \midrule
+        $R_2$ (30.3 mA) & 50 mA  & 19.6 & 22.0 & 19.35 & 1.28 \\
+        $R_2$ (30.3 mA) & 100 mA & 19.8 & 27.0 & 19.55 & 1.26 \\
+        \midrule
+        $R_3$ (45.4 mA) & 50 mA  & 24.9 & 27.5 & 25.02 & 0.48 \\
+        $R_3$ (45.4 mA) & 100 mA & 25.3 & 32.0 & 24.87 & 1.70 \\
+        \midrule
+        $I_{\text{Fuente}}$ (85.7 mA) & 100 mA & 34.3 & 41.0 & 34.45 & 0.44 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Los resultados de la Tabla \ref{tab:paralelo_corr3} validan de manera contundente la estrategia de corrección. Mientras que los errores crudos en la Tabla 7 llegaban hasta el 36\%, la corrección lineal es capaz de reducir el error de exactitud por debajo del 2\% en todos los casos. Esto demuestra que el instrumento, pese a sus enormes offsets sistemáticos y efecto de carga (problemas de exactitud e interacción con el sistema), goza de una precisión y repetibilidad (linealidad) excelentes, permitiendo reconstruir el valor real con alta confiabilidad a través de una función de transferencia inversa.
+
+
+
+
+
+% --- FIN DEL CÓDIGO PARA AGREGAR ---

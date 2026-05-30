@@ -1,0 +1,157 @@
+\documentclass[12pt]{article}
+
+\usepackage{placeins}
+\usepackage{wrapfig}
+% Paquetes esenciales para manejo de figuras
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+
+% --- PAQUETES DE GEOMETRÍA Y LAYOUT ---
+\usepackage[letterpaper, margin=2.5cm, headheight=15pt]{geometry}
+\usepackage{fancyhdr}
+\usepackage{titling}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+
+% --- PAQUETES DE TIPOGRAFÍA Y LENGUAJE ---
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, mexico]{babel}
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% --- PAQUETES DE MATEMÁTICAS Y CIENCIA ---
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage[siunitx]{circuitikz}
+\usepackage{steinmetz}
+\sisetup{
+    output-decimal-marker = {,},
+    detect-all = true
+}
+\DeclareSIUnit\voltampere{VA}
+\DeclareSIUnit\var{VAR}
+
+% --- PAQUETES DE FIGURAS Y GRÁFICOS ---
+\usepackage{svg}
+\usepackage{rotating}
+\usepackage{xcolor}
+\graphicspath{{Recursos/}{src/imagenes/}}
+
+% --- PAQUETES DE TABLAS ---
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{hhline}
+\usepackage{colortbl}
+\rowcolors{2}{gray!6}{white}
+\newcommand{\thickrule}{\Xhline{1.1pt}}
+\setlength{\arrayrulewidth}{0.6pt}
+\renewcommand{\arraystretch}{1.2}
+
+% --- PAQUETES DE CÓDIGO ---
+\usepackage{listings}
+\lstdefinelanguage{Matlab}{
+  keywords={break,case,catch,continue,else,elseif,end,for,function,global,if,otherwise,persistent,return,switch,try,while},
+  keywordstyle=\color{blue}\bfseries,
+  identifierstyle=\color{black},
+  commentstyle=\color{gray}\ttfamily,
+  stringstyle=\color{red},
+  sensitive=true
+}
+\lstset{
+  language=Matlab,
+  frame=single,
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{red},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  numbersep=5pt,
+  showstringspaces=false,
+  breaklines=true,
+  captionpos=b
+}
+
+% --- MISCELÁNEOS ---
+\usepackage{tocloft}
+\usepackage{multicol}
+
+% --- CONFIGURACIONES DEL DOCUMENTO ---
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=green, urlcolor=cyan, pageanchor=false}
+\setlength{\parskip}{0.8em}
+\setlength{\parindent}{0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ELI-214 Metrología Eléctrica}
+\rfoot{Experiencia 4}
+\lfoot{USM 2026-1}
+\rhead{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\arraystretch}{1.5}
+
+% ------------------- INICIO DEL DOCUMENTO -------------------
+\begin{document}
+
+% -------------------- PORTADA --------------------
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.85\textwidth]{logoDepEliUSM.png}
+    \vspace{2.4cm}
+    
+    \Large \textbf{[ELI214] - Metrología Eléctrica}\\
+    \vspace{1.2cm}
+    \rule{\textwidth}{0.4pt}
+    
+    \vspace{0.5cm}
+    \Huge \textbf{Experiencia N° [NUMERO]}
+    \vspace{0.3cm}
+    
+    \large  ``[TITULO DE LA EXPERIENCIA]'' \\
+    \vspace{0.3cm} 
+    \Large  Grupo [GRUPO]
+    \vspace{0.5cm}
+    \rule{\textwidth}{0.4pt}
+    
+    \vfill
+    \begin{flushleft}
+        \textbf{Autores:} \\
+        [NOMBRE AUTOR 1] [ROL 1]\\
+        [NOMBRE AUTOR 2] [ROL 2]\\[1em]
+        
+        \textbf{Profesor:} [NOMBRE PROFESOR]\\[1em]
+        \textbf{Ayudante:} [NOMBRE AYUDANTE]\\[1em]
+        \textbf{Fecha:} \today
+    \end{flushleft}
+\end{titlepage}
+
+\newpage
+\pagenumbering{roman}
+\tableofcontents
+\listoftables
+\listoffigures
+\newpage
+\pagenumbering{arabic}
+
+% ----------------------------------------------------
+% SECCIONES
+% ----------------------------------------------------
+
+% INSTRUCCIÓN AL AGENTE:
+% Inyecta dinámicamente aquí los \input{sections/nombre_archivo.tex}
+% basados en los archivos que creaste en el paso de setup.
+\input{sections/1resumen_ejecutivo.tex}
+\input{sections/2introduccion.tex}
+\input{sections/3desarrollo.tex} % Reemplazar por secciones reales
+\input{sections/4conclusiones.tex}
+
+\end{document}

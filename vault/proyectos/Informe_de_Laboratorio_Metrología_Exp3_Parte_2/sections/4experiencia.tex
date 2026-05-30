@@ -1,0 +1,32 @@
+\label{sec:desarrollo}
+
+Para la implementación práctica del amperímetro, se utilizó la metodología descrita en la guía de la experiencia, complementada con los cálculos del trabajo previo. El procedimiento se dividió en dos etapas principales: la calibración del instrumento y la prueba en un circuito de carga.
+
+\subsection{Armado y Calibración del Amperímetro}
+
+El montaje experimental se realizó utilizando dos protoboards. En uno se ensambló el amperímetro analógico, conectando el galvanómetro, la resistencia de calibración $R_c$ y las tres resistencias shunt ($R_{sh1}$, $R_{sh2}$, $R_{sh3}$) calculadas, junto al selector de rango. En el segundo protoboard se montó el circuito de prueba (o contrastación), compuesto por la fuente de $10~V_{cc}$ variable y las resistencias limitadoras fijas calculadas en la sección \ref{sec:contrastacion}.
+
+Para la calibración, se procedió de la siguiente manera:
+\begin{enumerate}
+    \item Se construyó $R_{sh2} = 11.5~\Omega$ y $R_{sh3} = 5.66~\Omega$ enrrollando alambre de nicrom en un lápiz. Se usó una resistencia en $R_{sh1} = 65.16~\Omega$ para evitar enrrollar 12 metros de alambre.
+    \item Se contrastaron las mediciones de las resistencias $R_{sh2}$ y $R_{sh3}$ obtenidas con multímetro digital mediante el uso de un Puente de Kelvin.
+    \item Se colocó un multímetro digital en modo amperímetro, actuando como instrumento patrón, en serie con el amperímetro analógico a construir.
+    \item Se seleccionó el rango máximo del instrumento (100 mA) y se conectó la resistencia limitadora correspondiente al rango.
+    \item Se energizó el circuito de prueba y se ajustó el nivel de tensión de la fuente hasta que el instrumento patrón indicó una corriente exacta de 100 mA.
+    \item Sobre esta condición, se ajustó la resistencia de calibración $R_c$ del amperímetro analógico hasta que la aguja del galvanómetro alcanzó la máxima deflexión (fondo de escala).
+    \item Luego, se modificó el circuito de prueba para suministrar 50 mA (medidos por el patrón) y se seleccionó el rango de 50 mA en el amperímetro analógico. Se registró la medición sin reajustar $R_c$, con el fin de medir el error inducido por la calibración única.
+    \item Se repitió el paso anterior para el rango de 10 mA, ajustando la fuente de prueba a 10 mA.
+\end{enumerate}
+
+\subsection{Medición en Circuito de Carga en Paralelo}
+
+Una vez calibrado el instrumento, se procedió a armar el circuito de carga en paralelo diseñado en la sección \ref{sec:paralelo}. Para conseguir los valores de resistencia $R_1$, $R_2$ y $R_3$ (1 k$\Omega$, 330 $\Omega$ y 220 $\Omega$), se utilizaron resistores de valores comerciales.
+
+Se realizaron las siguientes mediciones, siempre manteniendo el multímetro patrón en serie con el amperímetro analógico para contrastar los resultados:
+\begin{enumerate}
+    \item Se midió la corriente total $I_{\text{fuente}}$, insertando los amperímetros entre la fuente $V_{cc}$ y el nodo común de las resistencias en paralelo.
+    \item Se midió la corriente individual $I_1$, $I_2$ e $I_3$ que circula por cada resistencia, insertando los instrumentos en serie con cada rama correspondiente.
+\end{enumerate}
+
+Finalmente, los valores medidos por el amperímetro analógico fueron comparados con la medición del instrumento patrón y con el valor teórico esperado ($V_{cc}/R$).
+

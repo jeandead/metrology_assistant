@@ -1,0 +1,27 @@
+\documentclass[border=5pt]{standalone}
+\usepackage{circuitikz}
+\usepackage{siunitx}
+\usepackage{amsmath}
+
+\begin{document}
+\begin{circuitikz}[transform shape]
+	% Paths, nodes and wires:
+	\draw (9, 7) to[american voltage source, l_={$10 \, V_{cc}$}] (9, 3);
+	\draw (13.5, 3) to[qiprobe, mirror, v<=$ $, voltage=american] (11.5, 3);
+	\draw (11.25, 3) to[ammeter, mirror, v_<=$ $, voltage=american] (9.25, 3);
+	\draw (14, 7) to[european resistor, -*, l_={$200\, \Omega$}] (14, 5);
+	\draw (12, 7) to[european resistor, -*, l_={$100\, \Omega$}] (12, 5);
+	\draw (16, 7) to[european resistor, -*, l={$1 \, \text{k} \Omega$}] (16, 5);
+	\draw[-latex] (14, 3) -- (15.75, 4.75);
+	\node[trarrow, rotate=45, xscale=1.36, yscale=1.36] at (15.642, 4.642){};
+	\draw (9, 3) -- (9.25, 3);
+	\draw (11.25, 3) -- (11.5, 3);
+	\draw (13.5, 3) -- (14, 3);
+	\draw (9, 7) -- (12, 7);
+	\draw (12, 7) -- (14, 7);
+	\draw (14, 7) -- (16, 7);
+	\node[shape=rectangle, minimum width=1.465cm, minimum height=0.465cm] at (10.25, 2.5){} node[anchor=north west, align=left, text width=1.077cm, inner sep=6pt] at (9.5, 2.75){Digital};
+	\node[shape=rectangle, minimum width=1.465cm, minimum height=0.465cm] at (12.25, 2.5){} node[anchor=north west, align=left, text width=1.077cm, inner sep=6pt] at (11.5, 2.75){Galvanómetro};
+	\draw[-latex] (8.5, 4.5) -- (9.5, 5.5);
+\end{circuitikz}
+\end{document}

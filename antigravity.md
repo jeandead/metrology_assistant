@@ -41,7 +41,7 @@ Toda la base de conocimiento teórica, la estructura de carpetas, el índice mae
 **REGLA DE PARSEO (INDEXADOR RUST):** 
 Para leer archivos Markdown masivos o parsear el Vault, **ESTÁ ESTRICTAMENTE PROHIBIDO INVENTAR SCRIPTS EN PYTHON AL VUELO**. En su lugar, DEBES usar siempre el binario empaquetado en este plugin ubicado en:
 `bin\markdown2json.exe`
-Ejecútalo apuntando a la ruta del archivo o directorio markdown que desees indexar y lee el JSON resultante (ej. `bin\markdown2json.exe C:\Ruta\Al\Vault`).
+Ejecútalo apuntando a la ruta del archivo o directorio markdown que desees indexar y lee el JSON resultante (ej. `bin\markdown2json.exe vault\`).
 
 ## 4. Audit Core (Global Constitution)
 

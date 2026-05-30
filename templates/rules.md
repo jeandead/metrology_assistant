@@ -51,7 +51,7 @@ PROHIBIDO redactar conclusiones sin que los resultados estén validados y proces
 - Si un procesamiento en consola local puede darnos la respuesta, NUNCA intentar volcar el archivo entero al chat.
 
 ### D. APLICACIÓN AUTOMÁTICA DE SKILLS GLOBALES
-- El Agente debe escanear y aplicar de forma autónoma (sin necesidad de que el usuario las invoque explícitamente en el chat) las skills globales de **`C:\Users\Jean\.gemini\antigravity\skills`** según la tarea:
+- El Agente debe escanear y aplicar de forma autónoma (sin necesidad de que el usuario las invoque explícitamente en el chat) las skills globales de **`.gemini/antigravity/skills`** según la tarea:
   - **Fase de Redacción Final LaTeX:** Aplicar automáticamente los principios de **`@latex-rhythm-refiner`** para dar dinamismo a la prosa.
   - **Fase de Graficación/Plotting:** Aplicar las directivas de **`@matplotlib`** para que las figuras sean vectoriales, legibles y cumplan con el ancho de columna IEEE.
   - **Fase de Carga de Datos:** Aplicar **`@results-backfill`** para procesar CSV de laboratorio.

@@ -14,14 +14,14 @@ Cada prompt le exige a Antigravity leer la implementación física real que hici
 ### Fase 1: Protocolo Detallado
 **Objetivo:** Asegurar que el protocolo no sea una lista genérica, sino un script de ejecución en laboratorio.
 > **Prompt de Ejecución:**
-> `/goal Refactoriza las instrucciones de la skill @01_protocolo_detallado. Lee el archivo "C:\Users\Jean\Documents\labmetro4_1\protocolo_detallado.tex". Extrae los patrones metacognitivos de cómo redacté el paso-a-paso, cómo dividí las tablas de toma de datos y el nivel de detalle técnico de los botones del osciloscopio. Inyecta esos estándares en su SKILL.md.`
+> `/goal Refactoriza las instrucciones de la skill @01_protocolo_detallado. Lee el archivo "..\labmetro4_1\protocolo_detallado.tex". Extrae los patrones metacognitivos de cómo redacté el paso-a-paso, cómo dividí las tablas de toma de datos y el nivel de detalle técnico de los botones del osciloscopio. Inyecta esos estándares en su SKILL.md.`
 
 ---
 
 ### Fase 2: Setup y Planeación
 **Objetivo:** Robustece la inyección dinámica de los archivos `.tex` de secciones.
 > **Prompt de Ejecución:**
-> `/goal Refactoriza la skill @02_setup_y_planeacion. Analiza el árbol de directorios de "C:\Users\Jean\Documents\labmetro4_1". Mejora las reglas de escafoldeo en SKILL.md para que el agente entienda cómo subdividir la carpeta "sections" dinámicamente si la experiencia requiere múltiples circuitos o análisis separados, tal como se hizo en la Exp 4.`
+> `/goal Refactoriza la skill @02_setup_y_planeacion. Analiza el árbol de directorios de "..\labmetro4_1". Mejora las reglas de escafoldeo en SKILL.md para que el agente entienda cómo subdividir la carpeta "sections" dinámicamente si la experiencia requiere múltiples circuitos o análisis separados, tal como se hizo en la Exp 4.`
 
 ---
 
@@ -42,14 +42,14 @@ Cada prompt le exige a Antigravity leer la implementación física real que hici
 ### Fase 5: Sección Datos
 **Objetivo:** Formateo de tablas IEEE.
 > **Prompt de Ejecución:**
-> `/goal Refactoriza la skill @05_seccion_datos. Revisa cómo están hechas las tablas en "C:\Users\Jean\Documents\labmetro4_1\main.tex". Modifica SKILL.md para obligar al agente a usar los paquetes "booktabs", mantener 3 cifras significativas, usar notación científica estandarizada y referenciar cada tabla con \autoref{}`.
+> `/goal Refactoriza la skill @05_seccion_datos. Revisa cómo están hechas las tablas en "..\labmetro4_1\main.tex". Modifica SKILL.md para obligar al agente a usar los paquetes "booktabs", mantener 3 cifras significativas, usar notación científica estandarizada y referenciar cada tabla con \autoref{}`.
 
 ---
 
 ### Fase 6: Tratamiento y Análisis (El Core)
 **Objetivo:** Gráficas automatizadas y propagación de incertidumbre.
 > **Prompt de Ejecución:**
-> `/goal Refactoriza la skill @06_tratamiento_y_analisis. Analiza "C:\Users\Jean\Documents\labmetro4_1\src\plotter.py". Escribe instrucciones en SKILL.md que fuercen al agente a usar ese script exacto para graficar, inyectar barras de error (incertidumbre Tipo A y B), e interpretar físicamente CADA curva generada. Si el gráfico no demuestra el teorema de Blondel o la teoría, debe reportarlo.`
+> `/goal Refactoriza la skill @06_tratamiento_y_analisis. Analiza "..\labmetro4_1\src\plotter.py". Escribe instrucciones en SKILL.md que fuercen al agente a usar ese script exacto para graficar, inyectar barras de error (incertidumbre Tipo A y B), e interpretar físicamente CADA curva generada. Si el gráfico no demuestra el teorema de Blondel o la teoría, debe reportarlo.`
 
 ---
 

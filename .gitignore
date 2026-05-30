@@ -1,0 +1,16 @@
+# Securing Secrets and Local Environments
+.env
+.env.*
+*.key
+*.pem
+secret.json
+credentials.json
+
+# Antigravity temporary execution traces
+.trash/
+.system_generated/
+scratch/
+
+# OS Generated
+.DS_Store
+Thumbs.db

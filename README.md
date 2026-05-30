@@ -51,3 +51,5 @@ El sistema requiere el ejecutable `markdown2json.exe` (incluido en `/bin`) para 
 
 > **💡 Recomendación de Formato:** 
 > Cuando necesites pasarle manuales de equipos, guías de laboratorio o papers al agente de Antigravity (para que inicie el protocolo), se recomienda encarecidamente **convertirlos de antemano a formato Markdown (`.md`)**. Subir PDFs directamente puede corromper o perder las ecuaciones matemáticas y las tablas críticas, lo cual afectará la precisión de la Fase 3 (Trabajo Previo).
+> 
+> Para realizar esta conversión conservando ecuaciones y tablas estructurales con IA, puedes usar **[este Script Oficial en Google Colab](https://colab.research.google.com/drive/1wBN7x2RWLA-93a1__4-q3qJhRCskS9Yy?usp=sharing)** basado en `docling`.

@@ -17,6 +17,9 @@ Este repositorio contiene la "lógica pura" del agente. Para instalarlo en tu ec
 3. Pide a tu instancia activa de Antigravity que lo instale como un plugin global:
    > *"Instala el plugin ubicado en el directorio actual"*
 
+4. Instala las dependencias subyacentes del sistema (MiKTeX, Python, Git y paquetes pip) requeridas por las templates:
+   - Ejecuta el archivo `setup.bat` (puedes darle doble clic desde el Explorador de Archivos o ejecutar `.\setup.bat` en tu terminal).
+
 Antigravity leerá el `plugin.json` y mapeará todas las *skills* internamente.
 
 ## ⚙️ Uso Básico

@@ -1,0 +1,10 @@
+matplotlib
+numpy
+pandas
+python-dotenv
+requests
+
+# Dependencias de sistema (instalar vía PowerShell / CMD):
+# winget install -e --id MiKTeX.MiKTeX
+# winget install -e --id Python.Python.3.11
+# winget install -e --id Git.Git

@@ -1,6 +1,6 @@
 # Metrology Assistant - Antigravity Plugin
 
-Este repositorio es un **Plugin Oficial para Antigravity**, diseñado como un Orquestador Maestro de 12 Fases para la automatización, cálculo empírico y redacción de informes de laboratorio bajo estándares IEEE (específicamente optimizado para la asignatura ELI-214: Metrología Eléctrica).
+Este repositorio es un **Plugin para Antigravity**, diseñado como un Orquestador Maestro de 12 Fases para la automatización, cálculo empírico y redacción de informes de laboratorio bajo estándares IEEE (específicamente optimizado para la asignatura ELI-214: Metrología Eléctrica).
 
 ## 🚀 Instalación
 

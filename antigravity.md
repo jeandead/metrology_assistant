@@ -34,13 +34,13 @@ Existen subagentes especializados en `agents/` que puedes invocar para delegar t
 Toda la base de conocimiento teórica, la estructura de carpetas, el índice maestro de apuntes y la **personalidad estricta de Auditor Metrológico** del Agente están definidos centralmente dentro del Vault.
 
 **REGLA OBLIGATORIA:** Cada vez que necesites consultar teoría, fórmulas o interactuar con el Vault, DEBES analizar de forma íntegra el siguiente archivo que actúa como la única fuente de verdad:
-`C:\Users\Jean\Documents\metrology_assistant\vault\ANTIGRAVITY.md`
+`vault\ANTIGRAVITY.md`
 
 (No intentes adivinar el contenido del Vault. Siempre lee ese archivo primero, ya que contiene el mapa exacto hacia los apuntes `index.md` y las instrucciones operativas).
 
 **REGLA DE PARSEO (INDEXADOR RUST):** 
 Para leer archivos Markdown masivos o parsear el Vault, **ESTÁ ESTRICTAMENTE PROHIBIDO INVENTAR SCRIPTS EN PYTHON AL VUELO**. En su lugar, DEBES usar siempre el binario empaquetado en este plugin ubicado en:
-`C:\Users\Jean\Documents\metrology_assistant\bin\markdown2json.exe`
+`bin\markdown2json.exe`
 Ejecútalo apuntando a la ruta del archivo o directorio markdown que desees indexar y lee el JSON resultante (ej. `bin\markdown2json.exe C:\Ruta\Al\Vault`).
 
 ## 4. Audit Core (Global Constitution)

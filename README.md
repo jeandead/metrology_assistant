@@ -8,7 +8,7 @@ Este repositorio contiene la "lógica pura" del agente. Para instalarlo en tu ec
 
 1. Clona este repositorio en cualquier lugar de tu máquina:
    ```bash
-   git clone https://github.com/TuUsuario/metrology_assistant.git
+   git clone https://github.com/jeandead/metrology_assistant.git
    ```
 2. Navega al directorio:
    ```bash
